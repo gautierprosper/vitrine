@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlannInTime - The planning software that enforces deadlines</title>
+<meta name="description" content="Assign, track and evaluate your tasks with automatic notifications before each deadline. Kanban, Timeline and Calendar.">
+<link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="canonical" href="https://plannintime.com/"/>
+<link rel="alternate" hreflang="en" href="https://plannintime.com/"/>
+<link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/"/>
+<link rel="alternate" hreflang="es" href="https://plannintime.com/es/"/>
+<link rel="alternate" hreflang="de" href="https://plannintime.com/de/"/>
+<link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/"/>
+<link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/"/>
+<link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/"/>
+<link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/"/>
+<link rel="alternate" hreflang="x-default" href="https://plannintime.com/"/>
+<meta property="og:image" content="https://plannintime.com/images/hero-en.png"/>
+<style>
+*{box-sizing:border-box}body{font-family:Inter,system-ui,-apple-system,sans-serif;margin:0;color:#0f172a;background:#fff;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);position:sticky;top:0;z-index:10}
+.logo{font-weight:800;font-size:22px;background:linear-gradient(135deg,#2563eb,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+nav a{margin:0 12px;text-decoration:none;color:#334155;font-weight:500}
+nav a:hover{color:#2563eb}
+.btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block;box-shadow:0 4px 15px rgba(37,99,235,.3);transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(37,99,235,.4)}
+.hero{padding:80px 5%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:linear-gradient(180deg,#eff6ff 0%,#f5f3ff 50%,#fff 100%)}
+.hero h1{font-size:52px;line-height:1.1;margin:0 0 20px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p.sub{font-size:19px;color:#475569;margin:0 0 30px}
+.badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
+.trust{margin-top:16px;color:#64748b;font-size:14px}
+.hero img{width:100%;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 20px 50px rgba(0,0,0,.1)}
+.features{padding:60px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto}
+.card{border:1px solid #e2e8f0;padding:28px;border-radius:18px;background:#fff;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);border-color:#c7d2fe}
+.card h3{margin:0 0 10px;font-size:20px}
+.card p{margin:0;color:#64748b}
+.card.icon{font-size:32px;margin-bottom:12px;display:block}
+.img-section{padding:80px 5%;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);color:#fff}
+.img-section h2{text-align:center;font-size:38px;margin:0}
+.img-section p.lead{text-align:center;color:#cbd5e1;max-width:620px;margin:14px auto 0}
+.img-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px;max-width:1100px;margin-left:auto;margin-right:auto}
+.img-card{background:#fff;color:#0f172a;border-radius:20px;padding:14px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
+.img-card img{width:100%;border-radius:14px;border:1px solid #e2e8f0}
+.img-card h4{margin:14px 10px 6px;font-size:18px}
+.img-card p{margin:0 10px 14px;color:#64748b;font-size:14px}
+.cta{padding:80px 5%;text-align:center;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
+.cta h2{font-size:36px;margin:0 0 16px}
+.cta.btn{background:#fff;color:#2563eb!important;box-shadow:none;margin-top:20px}
+footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top:1px solid #f1f5f9}
+@media(max-width:800px){.hero{grid-template-columns:1fr;padding:40px 5%}.hero h1{font-size:36px}.features{grid-template-columns:1fr}.img-grid{grid-template-columns:1fr}}
+@keyframes shine{to{background-position:200% center}}
+</style>
+<script>
+// Auto-détection 8 langues - version corrigée
+(function(){
+  // Si on a déjà redirigé une fois, on ne redirige plus
+  if(localStorage.getItem('pit_lang_done')) return;
+  // Uniquement sur la home exacte /
+  if(location.pathname!== '/' ) return;
+  // Ne pas rediriger si on vient de cliquer Login (nouvel onglet gère ça)
+  const map = {fr:'/fr/', es:'/es/', de:'/de/', pt:'/pt/', zh:'/zh/', hi:'/hi/', ar:'/ar/'};
+  const lang = (navigator.language||'en').toLowerCase().split('-')[0];
+  if(map[lang]){
+    localStorage.setItem('pit_lang_done', '1');
+    location.replace(map[lang]);
+  }
+})();
+</script>
+</head>
+<body>
+<header>
+<div style="display:flex;align-items:center;gap:10px">
+  <img src="/favicon.png" alt="PlannInTime" style="width:36px;height:36px;border-radius:8px"/>
+  <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#0F9D58,#FFC107,#0F9D58);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
+</div>
+<nav>
+<a href="/planning.html">Planning</a>
+<a href="/pricing.html">Pricing</a>
+<a href="/contact.html">Contact</a>
+<a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener" style="padding:8px 16px">Login</a>
+</nav>
+</header>
+<section class="hero">
+<div>
+<span class="badge">✨ New: A3 landscape PDF export</span>
+<h1>The planning software that enforces deadlines.</h1>
+<p class="sub">Assign your tasks in 2 clicks, track progress in real time and receive automatic notifications before each deadline.</p>
+<a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Start for free →</a>
+<p class="trust">✓ No credit card · ✓ In 2 minutes · ✓ English support</p>
+</div>
+<div><img src="/images/hero-en.png" alt="PlannInTime Planning software"></div>
+</section>
+<section class="features">
+<div class="card"><span class="icon">📋</span><h3>Easy assignment</h3><p>Assign a task in 2 clicks, set the deadline and owner.</p></div>
+<div class="card"><span class="icon">🔔</span><h3>Auto notifications</h3><p>Reminders at D-3, D-1, H-2. Customizable by project and role.</p></div>
+<div class="card"><span class="icon">📊</span><h3>Clear evaluation</h3><p>Who is ahead, who is late? Performance dashboard.</p></div>
+</section>
+<section class="img-section">
+<h2>Visualize, export, share</h2>
+<p class="lead">From real-time tracking to professional export for your site meetings.</p>
+<div class="img-grid">
+<div class="img-card"><img src="/images/evolution-taches-en.png" alt="Real-time task evolution"><h4>Real-time task evolution</h4><p>Tracking by deadline or subtask progress. Each member sees their progress.</p></div>
+<div class="img-card"><img src="/images/planning-pdf-en.png" alt="Exported PDF planning"><h4>Pro PDF export (A4 / A3 landscape)</h4><p>Generate weekly or general planning, with designations and owners.</p></div>
+</div>
+</section>
+<section class="cta">
+<h2>Ready to never miss a deadline again?</h2>
+<p>Join teams that deliver on time with PlannInTime.</p>
+<a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Free trial →</a>
+</section>
+<footer>© 2026 PlannInTime - plannintime.com</footer>
+</body>
+</html>

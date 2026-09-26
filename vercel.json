@@ -1,0 +1,41 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/en", "destination": "/", "permanent": true },
+    { "source": "/en/:path*", "destination": "/:path*", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/planning", "destination": "/planning.html" },
+    { "source": "/fonctionnalites", "destination": "/fonctionnalites.html" },
+    { "source": "/features", "destination": "/features.html" },
+    { "source": "/tarifs", "destination": "/tarifs.html" },
+    { "source": "/pricing", "destination": "/pricing.html" },
+    { "source": "/contact", "destination": "/contact.html" },
+
+    { "source": "/fr", "destination": "/fr/index.html" },
+    { "source": "/fr/planning", "destination": "/fr/planning.html" },
+    { "source": "/fr/fonctionnalites", "destination": "/fr/fonctionnalites.html" },
+    { "source": "/fr/tarifs", "destination": "/fr/tarifs.html" },
+    { "source": "/fr/contact", "destination": "/fr/contact.html" },
+
+    { "source": "/es", "destination": "/es/index.html" },
+    { "source": "/es/:path*", "destination": "/es/:path*" },
+
+    { "source": "/de", "destination": "/de/index.html" },
+    { "source": "/de/:path*", "destination": "/de/:path*" },
+
+    { "source": "/pt", "destination": "/pt/index.html" },
+    { "source": "/pt/:path*", "destination": "/pt/:path*" },
+
+    { "source": "/zh", "destination": "/zh/index.html" },
+    { "source": "/zh/:path*", "destination": "/zh/:path*" },
+
+    { "source": "/hi", "destination": "/hi/index.html" },
+    { "source": "/hi/:path*", "destination": "/hi/:path*" },
+
+    { "source": "/ar", "destination": "/ar/index.html" },
+    { "source": "/ar/:path*", "destination": "/ar/:path*" }
+  ]
+}
