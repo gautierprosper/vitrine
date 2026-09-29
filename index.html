@@ -25,7 +25,7 @@ nav a{margin:0 12px;text-decoration:none;color:#334155;font-weight:500}
 nav a:hover{color:#2563eb}
 .btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block;box-shadow:0 4px 15px rgba(37,99,235,.3);transition:.2s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(37,99,235,.4)}
-.hero{padding:80px 5%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:linear-gradient(180deg,#eff6ff 0%,#f5f3ff 50%,#fff 100%)}
+.hero{padding:80px 5%;display:grid;grid-template-columns:1.1fr.9fr;gap:40px;align-items:center;background:linear-gradient(180deg,#eff6ff 0%,#f5f3ff 50%,#fff 100%)}
 .hero h1{font-size:52px;line-height:1.1;margin:0 0 20px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero p.sub{font-size:19px;color:#475569;margin:0 0 30px}
 .badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
@@ -53,13 +53,9 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 @keyframes shine{to{background-position:200% center}}
 </style>
 <script>
-// Auto-détection 8 langues - version corrigée
 (function(){
-  // Si on a déjà redirigé une fois, on ne redirige plus
   if(localStorage.getItem('pit_lang_done')) return;
-  // Uniquement sur la home exacte /
   if(location.pathname!== '/' ) return;
-  // Ne pas rediriger si on vient de cliquer Login (nouvel onglet gère ça)
   const map = {fr:'/fr/', es:'/es/', de:'/de/', pt:'/pt/', zh:'/zh/', hi:'/hi/', ar:'/ar/'};
   const lang = (navigator.language||'en').toLowerCase().split('-')[0];
   if(map[lang]){
@@ -88,10 +84,43 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <h1>The planning software that enforces deadlines.</h1>
 <p class="sub">Assign your tasks in 2 clicks, track progress in real time and receive automatic notifications before each deadline.</p>
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Start for free →</a>
-<p class="trust">✓ No credit card · ✓ In 2 minutes · ✓ English support</p>
+<p class="trust">✓ No credit card · ✓ In 1 minute · ✓ English support</p>
 </div>
 <div><img src="/images/hero-en.png" alt="PlannInTime Planning software"></div>
 </section>
+
+<!-- BLOC GUIDE - CADRE VERT AU MILIEU -->
+<section style="padding:30px 5%;background:#f0fdf4">
+<div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#0F9D58,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
+<div style="color:#fff;flex:1;min-width:240px">
+<h3 style="margin:0 0 6px;font-size:22px;color:#fff">📘 Free User Guide</h3>
+<p id="guide-text" style="margin:0;color:#d1fae5;font-size:15px">Download the complete guide in PDF (2 min read)</p>
+</div>
+<a id="guide-btn" href="/guides/guide-en.pdf" download style="background:#fff;color:#0F9D58;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">Download PDF guide →</a>
+</div>
+</section>
+<script>
+(function(){
+  const guides = {
+    fr: {file:'/guides/guide-fr.pdf', text:'Téléchargez le guide complet en PDF (2 min)', btn:'Télécharger le guide PDF →'},
+    en: {file:'/guides/guide-en.pdf', text:'Download the complete guide in PDF (2 min)', btn:'Download PDF guide →'},
+    es: {file:'/guides/guide-es.pdf', text:'Descarga la guía completa en PDF (2 min)', btn:'Descargar guía PDF →'},
+    de: {file:'/guides/guide-de.pdf', text:'Laden Sie den vollständigen Leitfaden als PDF herunter (2 Min)', btn:'PDF-Leitfaden herunterladen →'},
+    pt: {file:'/guides/guide-pt.pdf', text:'Baixe o guia completo em PDF (2 min)', btn:'Baixar guia PDF →'},
+    zh: {file:'/guides/guide-zh.pdf', text:'下载完整 PDF 指南（2 分钟）', btn:'下载 PDF 指南 →'},
+    hi: {file:'/guides/guide-hi.pdf', text:'पूरा गाइड PDF में डाउनलोड करें (2 मिनट)', btn:'PDF गाइड डाउनलोड करें →'},
+    ar: {file:'/guides/guide-ar.pdf', text:'حمّل الدليل الكامل PDF (دقيقتان)', btn:'تحميل دليل PDF →'}
+  };
+  const lang = (navigator.language||'en').toLowerCase().split('-')[0];
+  const g = guides[lang] || guides.en;
+  const btn = document.getElementById('guide-btn');
+  const txt = document.getElementById('guide-text');
+  if(btn){ btn.href = g.file; btn.textContent = g.btn; }
+  if(txt){ txt.textContent = g.text; }
+})();
+</script>
+<!-- FIN BLOC GUIDE -->
+
 <section class="features">
 <div class="card"><span class="icon">📋</span><h3>Easy assignment</h3><p>Assign a task in 2 clicks, set the deadline and owner.</p></div>
 <div class="card"><span class="icon">🔔</span><h3>Auto notifications</h3><p>Reminders at D-3, D-1, H-2. Customizable by project and role.</p></div>
