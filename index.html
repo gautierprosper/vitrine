@@ -89,37 +89,15 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <div><img src="/images/hero-en.png" alt="PlannInTime Planning software"></div>
 </section>
 
-<!-- BLOC GUIDE - CADRE VERT AU MILIEU -->
 <section style="padding:30px 5%;background:#f0fdf4">
 <div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#0F9D58,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
 <div style="color:#fff;flex:1;min-width:240px">
 <h3 style="margin:0 0 6px;font-size:22px;color:#fff">📘 Free User Guide</h3>
-<p id="guide-text" style="margin:0;color:#d1fae5;font-size:15px">Download the complete guide in PDF (2 min read)</p>
+<p style="margin:0;color:#d1fae5;font-size:15px">Download the complete guide in PDF (1 min)</p>
 </div>
-<a id="guide-btn" href="/guides/guide-en.pdf" download style="background:#fff;color:#0F9D58;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">Download PDF guide →</a>
+<a href="/guides/guide-en.pdf" download style="background:#fff;color:#0F9D58;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">Download PDF guide →</a>
 </div>
 </section>
-<script>
-(function(){
-  const guides = {
-    fr: {file:'/guides/guide-fr.pdf', text:'Téléchargez le guide complet en PDF (2 min)', btn:'Télécharger le guide PDF →'},
-    en: {file:'/guides/guide-en.pdf', text:'Download the complete guide in PDF (2 min)', btn:'Download PDF guide →'},
-    es: {file:'/guides/guide-es.pdf', text:'Descarga la guía completa en PDF (2 min)', btn:'Descargar guía PDF →'},
-    de: {file:'/guides/guide-de.pdf', text:'Laden Sie den vollständigen Leitfaden als PDF herunter (2 Min)', btn:'PDF-Leitfaden herunterladen →'},
-    pt: {file:'/guides/guide-pt.pdf', text:'Baixe o guia completo em PDF (2 min)', btn:'Baixar guia PDF →'},
-    zh: {file:'/guides/guide-zh.pdf', text:'下载完整 PDF 指南（2 分钟）', btn:'下载 PDF 指南 →'},
-    hi: {file:'/guides/guide-hi.pdf', text:'पूरा गाइड PDF में डाउनलोड करें (2 मिनट)', btn:'PDF गाइड डाउनलोड करें →'},
-    ar: {file:'/guides/guide-ar.pdf', text:'حمّل الدليل الكامل PDF (دقيقتان)', btn:'تحميل دليل PDF →'}
-  };
-  const lang = (navigator.language||'en').toLowerCase().split('-')[0];
-  const g = guides[lang] || guides.en;
-  const btn = document.getElementById('guide-btn');
-  const txt = document.getElementById('guide-text');
-  if(btn){ btn.href = g.file; btn.textContent = g.btn; }
-  if(txt){ txt.textContent = g.text; }
-})();
-</script>
-<!-- FIN BLOC GUIDE -->
 
 <section class="features">
 <div class="card"><span class="icon">📋</span><h3>Easy assignment</h3><p>Assign a task in 2 clicks, set the deadline and owner.</p></div>
