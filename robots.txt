@@ -1,11 +1,6 @@
 User-agent: *
 Allow: /
-Disallow: /app/
 Disallow: /admin/
 Disallow: /*?*
 
-# Sitemaps
 Sitemap: https://plannintime.com/sitemap.xml
-
-# Host
-Host: https://plannintime.com

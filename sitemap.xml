@@ -17,6 +17,7 @@
   </url>
   <url><loc>https://plannintime.com/planning.html</loc></url>
   <url><loc>https://plannintime.com/features.html</loc></url>
+  <url><loc>https://plannintime.com/pricing.html</loc></url>
   <url><loc>https://plannintime.com/contact.html</loc></url>
 
   <!-- FR -->
@@ -34,6 +35,7 @@
   </url>
   <url><loc>https://plannintime.com/fr/planning.html</loc></url>
   <url><loc>https://plannintime.com/fr/fonctionnalites.html</loc></url>
+  <url><loc>https://plannintime.com/fr/tarifs.html</loc></url>
   <url><loc>https://plannintime.com/fr/contact.html</loc></url>
 
   <!-- ES -->
@@ -50,7 +52,8 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/"/>
   </url>
   <url><loc>https://plannintime.com/es/planning.html</loc></url>
-  <url><loc>https://plannintime.com/es/features.html</loc></url>
+  <url><loc>https://plannintime.com/es/funcionalidades.html</loc></url>
+  <url><loc>https://plannintime.com/es/precios.html</loc></url>
   <url><loc>https://plannintime.com/es/contact.html</loc></url>
 
   <!-- DE -->
@@ -67,7 +70,8 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/"/>
   </url>
   <url><loc>https://plannintime.com/de/planning.html</loc></url>
-  <url><loc>https://plannintime.com/de/features.html</loc></url>
+  <url><loc>https://plannintime.com/de/funktionen.html</loc></url>
+  <url><loc>https://plannintime.com/de/preise.html</loc></url>
   <url><loc>https://plannintime.com/de/contact.html</loc></url>
 
   <!-- PT -->
@@ -84,7 +88,8 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/"/>
   </url>
   <url><loc>https://plannintime.com/pt/planning.html</loc></url>
-  <url><loc>https://plannintime.com/pt/features.html</loc></url>
+  <url><loc>https://plannintime.com/pt/funcionalidades.html</loc></url>
+  <url><loc>https://plannintime.com/pt/precos.html</loc></url>
   <url><loc>https://plannintime.com/pt/contact.html</loc></url>
 
   <!-- ZH -->
@@ -102,6 +107,7 @@
   </url>
   <url><loc>https://plannintime.com/zh/planning.html</loc></url>
   <url><loc>https://plannintime.com/zh/features.html</loc></url>
+  <url><loc>https://plannintime.com/zh/pricing.html</loc></url>
   <url><loc>https://plannintime.com/zh/contact.html</loc></url>
 
   <!-- HI -->
@@ -119,6 +125,7 @@
   </url>
   <url><loc>https://plannintime.com/hi/planning.html</loc></url>
   <url><loc>https://plannintime.com/hi/features.html</loc></url>
+  <url><loc>https://plannintime.com/hi/pricing.html</loc></url>
   <url><loc>https://plannintime.com/hi/contact.html</loc></url>
 
   <!-- AR -->
@@ -136,6 +143,7 @@
   </url>
   <url><loc>https://plannintime.com/ar/planning.html</loc></url>
   <url><loc>https://plannintime.com/ar/features.html</loc></url>
+  <url><loc>https://plannintime.com/ar/pricing.html</loc></url>
   <url><loc>https://plannintime.com/ar/contact.html</loc></url>
 
 </urlset>
