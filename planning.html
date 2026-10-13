@@ -16,6 +16,10 @@
 <link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/planning.html"/>
 <link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/planning.html"/>
 <link rel="alternate" hreflang="x-default" href="https://plannintime.com/planning.html"/>
+<script>
+// EN détecte autres langues
+(function(){if(localStorage.getItem('pit_lang_done'))return;if(!location.pathname.includes('planning.html'))return;if(location.search.includes('noredirect'))return;const l=(navigator.language||'en').toLowerCase().split('-')[0];const m={'fr':'/fr/planning.html','es':'/es/planning.html','de':'/de/planning.html','pt':'/pt/planning.html','zh':'/zh/planning.html','hi':'/hi/planning.html','ar':'/ar/planning.html'};if(m[l]){localStorage.setItem('pit_lang_done','1');location.replace(m[l])}})();
+</script>
 <style>
 *{box-sizing:border-box}body{font-family:Inter,system-ui;margin:0;color:#0f172a;background:#fff;line-height:1.6}
 header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;position:sticky;top:0;background:#fff;z-index:10}
@@ -27,9 +31,9 @@ nav a{margin:0 10px;text-decoration:none;color:#334155;font-weight:500}
 .steps{max-width:1000px;margin:0 auto;padding:50px 5%;display:grid;gap:24px}
 .step{display:flex;gap:20px;border:1px solid #e2e8f0;border-radius:20px;padding:30px;background:#fff;align-items:flex-start}
 .num{flex-shrink:0;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:20px}
-.step:nth-child(1) .num{background:linear-gradient(135deg,#2563eb,#3b82f6)}
-.step:nth-child(2) .num{background:linear-gradient(135deg,#7c3aed,#a855f7)}
-.step:nth-child(3) .num{background:linear-gradient(135deg,#06b6d4,#22d3ee)}
+.step:nth-child(1).num{background:linear-gradient(135deg,#2563eb,#3b82f6)}
+.step:nth-child(2).num{background:linear-gradient(135deg,#7c3aed,#a855f7)}
+.step:nth-child(3).num{background:linear-gradient(135deg,#06b6d4,#22d3ee)}
 .step h2{margin:0 0 8px;font-size:22px}
 .step p{margin:0;color:#64748b}
 .cta{text-align:center;padding:40px 5% 70px}
@@ -42,7 +46,7 @@ nav a{margin:0 10px;text-decoration:none;color:#334155;font-weight:500}
   <img src="/favicon.png" alt="PlannInTime" style="width:36px;height:36px;border-radius:8px"/>
   <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#0F9D58,#FFC107,#0F9D58);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
 </div>
-<nav><a href="/">Home</a><a href="/planning.html"><b>Planning</b></a><a href="/features.html">Features</a><a href="/contact.html">Contact</a><a class="btn" href="https://app.plannintime.com">Login</a></nav>
+<nav><a href="/">Home</a><a href="/planning.html"><b>Planning</b></a><a href="/pricing.html">Pricing</a><a href="/contact.html">Contact</a><a class="btn" href="https://app.plannintime.com">Login</a></nav>
 </header>
 <div class="hero">
 <h1>A planning that works for you</h1>

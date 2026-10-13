@@ -16,7 +16,7 @@ nav a{margin:0 12px;text-decoration:none;color:#334155;font-weight:500}
 nav a:hover{color:#2563eb}
 .btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block;box-shadow:0 4px 15px rgba(37,99,235,.3);transition:.2s}
 .btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(37,99,235,.4)}
-.hero{padding:80px 5%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:linear-gradient(180deg,#eff6ff 0%,#f5f3ff 50%,#fff 100%)}
+.hero{padding:80px 5%;display:grid;grid-template-columns:1.1fr.9fr;gap:40px;align-items:center;background:linear-gradient(180deg,#eff6ff 0%,#f5f3ff 50%,#fff 100%)}
 .hero h1{font-size:48px;line-height:1.2;margin:0 0 20px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero p.sub{font-size:19px;color:#475569;margin:0 0 30px}
 .badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
@@ -27,7 +27,7 @@ nav a:hover{color:#2563eb}
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);border-color:#c7d2fe}
 .card h3{margin:0 0 10px;font-size:20px}
 .card p{margin:0;color:#64748b}
-.card .icon{font-size:32px;margin-bottom:12px;display:block}
+.card.icon{font-size:32px;margin-bottom:12px;display:block}
 .img-section{padding:80px 5%;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);color:#fff}
 .img-section h2{text-align:center;font-size:38px;margin:0}
 .img-section p.lead{text-align:center;color:#cbd5e1;max-width:620px;margin:14px auto 0}
@@ -38,13 +38,18 @@ nav a:hover{color:#2563eb}
 .img-card p{margin:0 10px 14px;color:#64748b;font-size:14px}
 .cta{padding:80px 5%;text-align:center;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
 .cta h2{font-size:36px;margin:0 0 16px}
-.cta .btn{background:#fff;color:#2563eb!important;box-shadow:none;margin-top:20px}
+.cta.btn{background:#fff;color:#2563eb!important;box-shadow:none;margin-top:20px}
 footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top:1px solid #f1f5f9}
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding:40px 5%}.hero h1{font-size:32px}.features{grid-template-columns:1fr}.img-grid{grid-template-columns:1fr}}
 @keyframes shine{to{background-position:200% center}}
 </style>
 </head>
 <body>
+<div id="lang-banner" style="display:none;background:#0F9D58;color:white;padding:12px;text-align:center;font-weight:600">
+  <span id="lang-msg"></span>
+  <a id="lang-link" href="#" style="background:white;color:#0F9D58;padding:6px 12px;border-radius:6px;margin-inline-start:10px;text-decoration:none">Go →</a>
+  <span onclick="this.parentElement.style.display='none'" style="cursor:pointer;margin-inline-start:15px">✕</span>
+</div>
 <header>
 <div style="display:flex;align-items:center;gap:10px">
   <img src="/favicon.png" alt="PlannInTime" style="width:36px;height:36px;border-radius:8px"/>
@@ -54,7 +59,7 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a href="/ar/planning.html">الجدولة</a>
 <a href="/ar/pricing.html">الأسعار</a>
 <a href="/ar/contact.html">اتصل بنا</a>
-<a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener" style="padding:8px 16px">تسجيل الدخول</a>
+<a class="btn" href="https://app.plannintime.com" style="padding:8px 16px">تسجيل الدخول</a>
 </nav>
 </header>
 <section class="hero">
@@ -68,7 +73,7 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <div><img src="/images/hero-ar.png" alt="جدولة PlannInTime"></div>
 </section>
 
-<section style="padding:30px 5%;background:#f0fdf4" dir="rtl">
+<section style="padding:30px 5%;background:#f0fdf4">
 <div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#0F9D58,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
 <div style="color:#fff;flex:1;min-width:240px">
 <h3 style="margin:0 0 6px;font-size:22px;color:#fff">📘 دليل المستخدم المجاني</h3>
@@ -77,7 +82,6 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a href="/guides/guide-ar.pdf" download style="background:#fff;color:#0F9D58;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">← تحميل دليل PDF</a>
 </div>
 </section>
-
 <section class="features">
 <div class="card"><span class="icon">📋</span><h3>تعيين بسيط</h3><p>عيّن مهمة بنقرتين، حدد الموعد النهائي والمسؤول.</p></div>
 <div class="card"><span class="icon">🔔</span><h3>إشعارات تلقائية</h3><p>تذكير في D-3، D-1، H-2. قابلة للتخصيص حسب المشروع والدور.</p></div>
@@ -96,6 +100,22 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <p>انضم إلى الفرق التي تسلم في الوقت المحدد مع PlannInTime.</p>
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">تجربة مجانية →</a>
 </section>
+
 <footer>© 2026 PlannInTime - plannintime.com</footer>
+
+<script>
+// Détection qui ne bloque PAS Googlebot
+(function(){
+  if(navigator.userAgent.includes('Googlebot') || localStorage.getItem('lang_banner_closed')) return;
+  const userLang = (navigator.language||'en').slice(0,2);
+  const map = {en:'/', fr:'/fr/', es:'/es/', de:'/de/', pt:'/pt/', zh:'/zh/', hi:'/hi/', ar:'/ar/'};
+  const names = {en:'English', fr:'Français', es:'Español', de:'Deutsch', pt:'Português', zh:'中文', hi:'हिन्दी', ar:'العربية'};
+  if(map[userLang] && map[userLang]!== '/ar/'){
+    document.getElementById('lang-msg').innerText = 'Detected: ' + (names[userLang]||userLang) + ' - Switch?';
+    document.getElementById('lang-link').href = map[userLang];
+    document.getElementById('lang-banner').style.display = 'block';
+  }
+})();
+</script>
 </body>
 </html>

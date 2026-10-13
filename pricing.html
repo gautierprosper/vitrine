@@ -7,13 +7,18 @@
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/pricing.html"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/pricing.html"/>
-<link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/tarifs.html"/>
-<link rel="alternate" hreflang="es" href="https://plannintime.com/es/precios.html"/>
-<link rel="alternate" hreflang="de" href="https://plannintime.com/de/preise.html"/>
-<link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/precos.html"/>
+<link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/pricing.html"/>
+<link rel="alternate" hreflang="es" href="https://plannintime.com/es/pricing.html"/>
+<link rel="alternate" hreflang="de" href="https://plannintime.com/de/pricing.html"/>
+<link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/pricing.html"/>
 <link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/pricing.html"/>
 <link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/pricing.html"/>
 <link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/pricing.html"/>
+<link rel="alternate" hreflang="x-default" href="https://plannintime.com/pricing.html"/>
+<script>
+// EN détecte autres langues
+(function(){if(localStorage.getItem('pit_lang_done'))return;if(!location.pathname.includes('pricing.html'))return;if(location.search.includes('noredirect'))return;const l=(navigator.language||'en').toLowerCase().split('-')[0];const m={'fr':'/fr/pricing.html','es':'/es/pricing.html','de':'/de/pricing.html','pt':'/pt/pricing.html','zh':'/zh/pricing.html','hi':'/hi/pricing.html','ar':'/ar/pricing.html'};if(m[l]){localStorage.setItem('pit_lang_done','1');location.replace(m[l])}})();
+</script>
 <style>
 *{box-sizing:border-box}
 body{font-family:Inter,system-ui;margin:0;color:#0f172a;background:#fff}
@@ -42,11 +47,9 @@ h1{font-size:42px;margin:0 0 10px;background:linear-gradient(135deg,#0F9D58,#0a7
 </div>
 <nav><a href="/">Home</a><a href="/planning.html">Planning</a><a href="/pricing.html"><b>Pricing</b></a><a href="/contact.html">Contact</a><a class="btn" href="https://app.plannintime.com">Login</a></nav>
 </header>
-
 <main>
 <h1>Pricing</h1>
 <p class="sub">We broke the price so you can build your projects.</p>
-
 <div class="pricing-card">
 <img src="/images/free-en.png" alt="Totally Free - $ smashed by hammer">
 <div class="pricing-text">
@@ -63,7 +66,6 @@ h1{font-size:42px;margin:0 0 10px;background:linear-gradient(135deg,#0F9D58,#0a7
 <p style="margin-top:14px;font-size:13px;color:#94a3b8">100% free during 2026 launch. Future premium features will remain optional.</p>
 </div>
 </div>
-
 </main>
 </body>
 </html>
