@@ -42,7 +42,6 @@
   "description":"Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1.",
   "url":"https://plannintime.com/",
   "image":"https://plannintime.com/images/og-app-1200x630.png",
-  "logo":"https://plannintime.com/images/og-app-1200x630.png",
   "applicationCategory":"BusinessApplication",
   "operatingSystem":"Web",
   "inLanguage":"en",
@@ -85,25 +84,14 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding:40px 5%}.hero h1{font-size:36px}.features{grid-template-columns:1fr}.img-grid{grid-template-columns:1fr}}
 @keyframes shine{to{background-position:200% center}}
 </style>
-<script>
-// EN base détecte les autres langues
-(function(){
-  if(localStorage.getItem('pit_lang_done')) return;
-  if(location.pathname !== '/') return;
-  if(location.search.includes('noredirect')) return;
-  // Ne pas rediriger les robots Google / Bing
-  if(/googlebot|bingbot|slurp|duckbot|baiduspider|yandexbot/i.test(navigator.userAgent)) return;
 
-  const map = {fr:'/fr/', es:'/es/', de:'/de/', pt:'/pt/', zh:'/zh/', hi:'/hi/', ar:'/ar/'};
-  const lang = (navigator.language||'en').toLowerCase().split('-')[0];
-  if(map[lang]){
-    localStorage.setItem('pit_lang_done','1');
-    location.replace(map[lang] + '?noredirect=1');
-  }
-})();
-</script>
 </head>
 <body>
+<div id="lang-banner" style="display:none; background:#eff6ff; border-bottom:1px solid #bfdbfe; padding:12px; text-align:center; font-size:14px;">
+  🇫🇷 Ce site est disponible en Français - <a id="lang-link" href="/fr/" style="font-weight:700; color:#2563eb;">Voir en Français →</a>
+  <span onclick="this.parentElement.style.display='none'" style="margin-left:16px; cursor:pointer;">✕</span>
+</div>
+
 <header>
 <div style="display:flex;align-items:center;gap:10px">
   <img src="/favicon.png" alt="PlannInTime" style="width:36px;height:36px;border-radius:8px"/>
@@ -124,7 +112,7 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Start for free →</a>
 <p class="trust">✓ No credit card · ✓ In 1 minute · ✓ English support</p>
 </div>
-<div><img src="/images/hero-en.png" alt="PlannInTime Planning software"></div>
+<div><img src="/images/hero-en.webp" alt="PlannInTime Planning software"></div>
 </section>
 <section style="padding:30px 5%;background:#f0fdf4">
 <div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#0F9D58,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
@@ -144,8 +132,8 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <h2>Visualize, export, share</h2>
 <p class="lead">From real-time tracking to professional export for your site meetings.</p>
 <div class="img-grid">
-<div class="img-card"><img src="/images/evolution-taches-en.png" alt="Real-time task evolution"><h4>Real-time task evolution</h4><p>Tracking by deadline or subtask progress. Each member sees their progress.</p></div>
-<div class="img-card"><img src="/images/planning-pdf-en.png" alt="Exported PDF planning"><h4>Pro PDF export (A4 / A3 landscape)</h4><p>Generate weekly or general planning, with designations and owners.</p></div>
+<div class="img-card"><img src="/images/evolution-taches-en.webp" alt="Real-time task evolution"><h4>Real-time task evolution</h4><p>Tracking by deadline or subtask progress. Each member sees their progress.</p></div>
+<div class="img-card"><img src="/images/planning-pdf-en.webp" alt="Exported PDF planning"><h4>Pro PDF export (A4 / A3 landscape)</h4><p>Generate weekly or general planning, with designations and owners.</p></div>
 </div>
 </section>
 <section class="cta">
@@ -154,5 +142,17 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Free trial →</a>
 </section>
 <footer>© 2026 PlannInTime - plannintime.com</footer>
+<script>
+(function(){
+  if(location.pathname!=='/') return;
+  const map={fr:'Français',es:'Español',de:'Deutsch',pt:'Português',zh:'中文',hi:'हिन्दी',ar:'العربية'};
+  const lang=(navigator.language||'en').split('-')[0];
+  if(map[lang] && lang!=='en'){
+    document.getElementById('lang-link').href='/'+lang+'/';
+    document.getElementById('lang-link').textContent='Voir en '+map[lang]+' →';
+    document.getElementById('lang-banner').style.display='block';
+  }
+})();
+</script>
 </body>
 </html>
