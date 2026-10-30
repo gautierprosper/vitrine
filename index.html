@@ -7,6 +7,7 @@
 <meta name="description" content="Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1.">
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/"/>
+<link rel="preload" as="image" href="/images/hero-en.webp" fetchpriority="high">
 <link rel="alternate" hreflang="en" href="https://plannintime.com/"/>
 <link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/"/>
 <link rel="alternate" hreflang="es" href="https://plannintime.com/es/"/>
@@ -61,14 +62,14 @@ nav a:hover{color:#2563eb}
 .hero h1{font-size:52px;line-height:1.1;margin:0 0 20px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero p.sub{font-size:19px;color:#475569;margin:0 0 30px}
 .badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
-.trust{margin-top:16px;color:#64748b;font-size:14px}
+.trust{margin-top:16px;color:#475569;font-size:14px}
 .hero img{width:100%;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 20px 50px rgba(0,0,0,.1)}
 .features{padding:60px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto}
 .card{border:1px solid #e2e8f0;padding:28px;border-radius:18px;background:#fff;transition:.2s}
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);border-color:#c7d2fe}
 .card h3{margin:0 0 10px;font-size:20px}
-.card p{margin:0;color:#64748b}
-.card.icon{font-size:32px;margin-bottom:12px;display:block}
+.card p{margin:0;color:#475569}
+.card .icon{font-size:32px;margin-bottom:12px;display:block}
 .img-section{padding:80px 5%;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);color:#fff}
 .img-section h2{text-align:center;font-size:38px;margin:0}
 .img-section p.lead{text-align:center;color:#cbd5e1;max-width:620px;margin:14px auto 0}
@@ -76,26 +77,22 @@ nav a:hover{color:#2563eb}
 .img-card{background:#fff;color:#0f172a;border-radius:20px;padding:14px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
 .img-card img{width:100%;border-radius:14px;border:1px solid #e2e8f0}
 .img-card h4{margin:14px 10px 6px;font-size:18px}
-.img-card p{margin:0 10px 14px;color:#64748b;font-size:14px}
+.img-card p{margin:0 10px 14px;color:#475569;font-size:14px}
 .cta{padding:80px 5%;text-align:center;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
 .cta h2{font-size:36px;margin:0 0 16px}
-.cta.btn{background:#fff;color:#2563eb!important;box-shadow:none;margin-top:20px}
-footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top:1px solid #f1f5f9}
+.cta .btn{background:#fff;color:#2563eb!important;box-shadow:none;margin-top:20px}
+footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding:40px 5%}.hero h1{font-size:36px}.features{grid-template-columns:1fr}.img-grid{grid-template-columns:1fr}}
 @keyframes shine{to{background-position:200% center}}
 </style>
 
 </head>
 <body>
-<div id="lang-banner" style="display:none; background:#eff6ff; border-bottom:1px solid #bfdbfe; padding:12px; text-align:center; font-size:14px;">
-  🇫🇷 Ce site est disponible en Français - <a id="lang-link" href="/fr/" style="font-weight:700; color:#2563eb;">Voir en Français →</a>
-  <span onclick="this.parentElement.style.display='none'" style="margin-left:16px; cursor:pointer;">✕</span>
-</div>
 
 <header>
 <div style="display:flex;align-items:center;gap:10px">
   <img src="/favicon.png" alt="PlannInTime" style="width:36px;height:36px;border-radius:8px"/>
-  <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#0F9D58,#FFC107,#0F9D58);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
+  <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
 </div>
 <nav>
 <a href="/planning.html">Planning</a>
@@ -104,6 +101,7 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener" style="padding:8px 16px">Login</a>
 </nav>
 </header>
+<main>
 <section class="hero">
 <div>
 <span class="badge">✨ New: A3 landscape PDF export</span>
@@ -112,28 +110,28 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Start for free →</a>
 <p class="trust">✓ No credit card · ✓ In 1 minute · ✓ English support</p>
 </div>
-<div><img src="/images/hero-en.webp" alt="PlannInTime Planning software"></div>
+<div><img src="/images/hero-en.webp" alt="PlannInTime Planning software" width="600" height="800" fetchpriority="high"></div>
 </section>
 <section style="padding:30px 5%;background:#f0fdf4">
 <div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#0F9D58,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
 <div style="color:#fff;flex:1;min-width:240px">
-<h3 style="margin:0 0 6px;font-size:22px;color:#fff">📘 Free User Guide</h3>
+<h2 style="margin:0 0 6px;font-size:22px;color:#fff">📘 Free User Guide</h2>
 <p style="margin:0;color:#d1fae5;font-size:15px">Download the complete guide in PDF (1 min)</p>
 </div>
-<a href="/guides/guide-en.pdf" download style="background:#fff;color:#0F9D58;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">Download PDF guide →</a>
+<a href="/guides/guide-en.pdf" download style="background:#fff;color:#065f46;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">Download PDF guide →</a>
 </div>
 </section>
 <section class="features">
-<div class="card"><span style="font-size:32px;margin-bottom:12px;display:block">📋</span><h3>Easy assignment</h3><p>Assign a task in 2 clicks, set the deadline and owner.</p></div>
-<div class="card"><span style="font-size:32px;margin-bottom:12px;display:block">🔔</span><h3>Auto notifications</h3><p>Reminders at D-3, D-1, H-2. Customizable by project and role.</p></div>
-<div class="card"><span style="font-size:32px;margin-bottom:12px;display:block">📊</span><h3>Clear evaluation</h3><p>Who is ahead, who is late? Performance dashboard.</p></div>
+<div class="card"><span class="icon">📋</span><h2 style="font-size:20px;margin:0 0 10px">Easy assignment</h2><p>Assign a task in 2 clicks, set the deadline and owner.</p></div>
+<div class="card"><span class="icon">🔔</span><h2 style="font-size:20px;margin:0 0 10px">Auto notifications</h2><p>Reminders at D-3, D-1, H-2. Customizable by project and role.</p></div>
+<div class="card"><span class="icon">📊</span><h2 style="font-size:20px;margin:0 0 10px">Clear evaluation</h2><p>Who is ahead, who is late? Performance dashboard.</p></div>
 </section>
 <section class="img-section">
 <h2>Visualize, export, share</h2>
 <p class="lead">From real-time tracking to professional export for your site meetings.</p>
 <div class="img-grid">
-<div class="img-card"><img src="/images/evolution-taches-en.webp" alt="Real-time task evolution"><h4>Real-time task evolution</h4><p>Tracking by deadline or subtask progress. Each member sees their progress.</p></div>
-<div class="img-card"><img src="/images/planning-pdf-en.webp" alt="Exported PDF planning"><h4>Pro PDF export (A4 / A3 landscape)</h4><p>Generate weekly or general planning, with designations and owners.</p></div>
+<div class="img-card"><img src="/images/evolution-taches-en.webp" width="900" height="444" loading="lazy" alt="Real-time task evolution"><h3 style="margin:14px 10px 6px;font-size:18px">Real-time task evolution</h3><p>Tracking by deadline or subtask progress. Each member sees their progress.</p></div>
+<div class="img-card"><img src="/images/planning-pdf-en.webp" width="600" height="892" loading="lazy" alt="Exported PDF planning"><h3 style="margin:14px 10px 6px;font-size:18px">Pro PDF export (A4 / A3 landscape)</h3><p>Generate weekly or general planning, with designations and owners.</p></div>
 </div>
 </section>
 <section class="cta">
@@ -141,18 +139,8 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <p>Join teams that deliver on time with PlannInTime.</p>
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Free trial →</a>
 </section>
+</main>
 <footer>© 2026 PlannInTime - plannintime.com</footer>
-<script>
-(function(){
-  if(location.pathname!=='/') return;
-  const map={fr:'Français',es:'Español',de:'Deutsch',pt:'Português',zh:'中文',hi:'हिन्दी',ar:'العربية'};
-  const lang=(navigator.language||'en').split('-')[0];
-  if(map[lang] && lang!=='en'){
-    document.getElementById('lang-link').href='/'+lang+'/';
-    document.getElementById('lang-link').textContent='Voir en '+map[lang]+' →';
-    document.getElementById('lang-banner').style.display='block';
-  }
-})();
-</script>
+
 </body>
 </html>

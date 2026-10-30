@@ -6,6 +6,7 @@
 <title>PlannInTime - 免费施工进度计划软件 | 甘特图 PDF导出</title>
 <meta name="description" content="免费施工进度计划软件：分配任务、跟踪工期并导出甘特图A3 PDF。看板、时间轴带D-3自动提醒。">
 <link rel="icon" type="image/png" href="/favicon.png"/>
+<link rel="preload" as="image" href="/images/hero-zh.webp" fetchpriority="high">
 <link rel="canonical" href="https://plannintime.com/zh/"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/"/><link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/"/><link rel="alternate" hreflang="es" href="https://plannintime.com/es/"/><link rel="alternate" hreflang="de" href="https://plannintime.com/de/"/><link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/"/><link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/"/><link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/"/><link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/"/><link rel="alternate" hreflang="x-default" href="https://plannintime.com/"/>
 <meta property="og:url" content="https://plannintime.com/zh/">
@@ -47,13 +48,13 @@ nav a:hover{color:#2563eb}
 .hero h1{font-size:48px;line-height:1.15;margin:0 0 20px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero p.sub{font-size:18px;color:#475569;margin:0 0 30px}
 .badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
-.trust{margin-top:16px;color:#64748b;font-size:14px}
+.trust{margin-top:16px;color:#475569;font-size:14px}
 .hero img{width:100%;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 20px 50px rgba(0,0,0,.1)}
 .features{padding:60px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto}
 .card{border:1px solid #e2e8f0;padding:28px;border-radius:18px;background:#fff;transition:.2s}
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);border-color:#c7d2fe}
 .card h3{margin:0 0 10px;font-size:20px}
-.card p{margin:0;color:#64748b}
+.card p{margin:0;color:#475569}
 .card .icon{font-size:32px;margin-bottom:12px;display:block}
 .img-section{padding:80px 5%;background:linear-gradient(135deg,#0f172a 0%,#1e1b4b 100%);color:#fff}
 .img-section h2{text-align:center;font-size:36px;margin:0}
@@ -62,11 +63,11 @@ nav a:hover{color:#2563eb}
 .img-card{background:#fff;color:#0f172a;border-radius:20px;padding:14px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
 .img-card img{width:100%;border-radius:14px;border:1px solid #e2e8f0}
 .img-card h4{margin:14px 10px 6px;font-size:18px}
-.img-card p{margin:0 10px 14px;color:#64748b;font-size:14px}
+.img-card p{margin:0 10px 14px;color:#475569;font-size:14px}
 .cta{padding:80px 5%;text-align:center;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
 .cta h2{font-size:36px;margin:0 0 16px}
 .cta .btn{background:#fff;color:#2563eb!important;box-shadow:none;margin-top:20px}
-footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top:1px solid #f1f5f9}
+footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
 @media(max-width:800px){.hero{grid-template-columns:1fr;padding:40px 5%}.hero h1{font-size:32px}.features{grid-template-columns:1fr}.img-grid{grid-template-columns:1fr}}
 @keyframes shine{to{background-position:200% center}}
 </style>
@@ -75,7 +76,7 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <header>
 <div style="display:flex;align-items:center;gap:10px">
   <img src="/favicon.png" alt="PlannInTime" style="width:36px;height:36px;border-radius:8px"/>
-  <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#0F9D58,#FFC107,#0F9D58);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
+  <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
 </div>
 <nav>
 <a href="/zh/planning.html">规划</a>
@@ -84,6 +85,7 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener" style="padding:8px 16px">登录</a>
 </nav>
 </header>
+<main>
 <section class="hero">
 <div>
 <span class="badge">✨ 新功能：A3 横向 PDF 导出</span>
@@ -92,30 +94,30 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">免费开始 →</a>
 <p class="trust">✓ 无需信用卡 · ✓ 2分钟完成 · ✓ 中文支持</p>
 </div>
-<div><img src="/images/hero-zh.webp" alt="PlannInTime 规划"></div>
+<div><img src="/images/hero-zh.webp" width="600" height="889" fetchpriority="high" alt="PlannInTime 规划"></div>
 </section>
 
 <section style="padding:30px 5%;background:#f0fdf4">
-<div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#0F9D58,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
+<div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#065f46,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
 <div style="color:#fff;flex:1;min-width:240px">
-<h3 style="margin:0 0 6px;font-size:22px;color:#fff">📘 免费用户指南</h3>
+<h2 style="margin:0 0 6px;font-size:22px;color:#fff">📘 免费用户指南</h2>
 <p style="margin:0;color:#d1fae5;font-size:15px">下载完整 PDF 指南（1 分钟）</p>
 </div>
-<a href="/guides/guide-zh.pdf" download style="background:#fff;color:#0F9D58;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">下载 PDF 指南 →</a>
+<a href="/guides/guide-zh.pdf" download style="background:#fff;color:#065f46;padding:13px 24px;border-radius:10px;text-decoration:none;font-weight:800;display:inline-block;white-space:nowrap;box-shadow:0 4px 12px rgba(0,0,0,.15)">下载 PDF 指南 →</a>
 </div>
 </section>
 
 <section class="features">
-<div class="card"><span class="icon">📋</span><h3>简单分配</h3><p>2次点击分配任务，设定截止日期和负责人。</p></div>
-<div class="card"><span class="icon">🔔</span><h3>自动通知</h3><p>D-3、D-1、H-2 提醒。可按项目和角色配置。</p></div>
-<div class="card"><span class="icon">📊</span><h3>清晰评估</h3><p>谁提前，谁落后？绩效仪表盘一目了然。</p></div>
+<div class="card"><span class="icon">📋</span><h2 style="font-size:20px;margin:0 0 10px">简单分配</h2><p>2次点击分配任务，设定截止日期和负责人。</p></div>
+<div class="card"><span class="icon">🔔</span><h2 style="font-size:20px;margin:0 0 10px">自动通知</h2><p>D-3、D-1、H-2 提醒。可按项目和角色配置。</p></div>
+<div class="card"><span class="icon">📊</span><h2 style="font-size:20px;margin:0 0 10px">清晰评估</h2><p>谁提前，谁落后？绩效仪表盘一目了然。</p></div>
 </section>
 <section class="img-section">
 <h2>可视化、导出、分享</h2>
 <p class="lead">从实时跟踪到工地会议的专业导出。</p>
 <div class="img-grid">
-<div class="img-card"><img src="/images/evolution-taches-zh.webp" alt="任务进展"><h4>实时任务进展</h4><p>按截止日期或子任务进度跟踪。每个成员都能看到自己的进度。</p></div>
-<div class="img-card"><img src="/images/planning-pdf-zh.webp" alt="PDF 导出"><h4>专业 PDF 导出（A4 / A3 横向）</h4><p>生成周计划或总计划，包含任务说明和负责人。</p></div>
+<div class="img-card"><img src="/images/evolution-taches-zh.webp" width="300" height="610" loading="lazy" alt="任务进展"><h3 style="margin:14px 10px 6px;font-size:18px">实时任务进展</h3><p>按截止日期或子任务进度跟踪。每个成员都能看到自己的进度。</p></div>
+<div class="img-card"><img src="/images/planning-pdf-zh.webp" width="600" height="400" loading="lazy" alt="PDF 导出"><h3 style="margin:14px 10px 6px;font-size:18px">专业 PDF 导出（A4 / A3 横向）</h3><p>生成周计划或总计划，包含任务说明和负责人。</p></div>
 </div>
 </section>
 <section class="cta">
@@ -123,6 +125,7 @@ footer{padding:30px 5%;text-align:center;color:#94a3b8;font-size:14px;border-top
 <p>加入按时交付的团队，使用 PlannInTime。</p>
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">免费试用 →</a>
 </section>
+</main>
 <footer>© 2026 PlannInTime - plannintime.com</footer>
 </body>
 </html>
