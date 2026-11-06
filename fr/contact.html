@@ -37,13 +37,17 @@ button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:title" content="Contact | PlannInTime"/>
 <meta property="og:description" content="Contactez le support PlannInTime. Réponse en moins de 24h."/>
-<meta property="og:image" content="https://plannintime.com/images/og-app-1200x630.png"/>
+<meta property="og:image" content="https://plannintime.com/images/og-app-fr-1200x630.jpg"/>
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Contact | PlannInTime">
 <meta property="og:type" content="website"/>
+<meta name="twitter:title" content="Contact | PlannInTime">
+<meta name="twitter:description" content="Contactez le support PlannInTime. Réponse en moins de 24h.">
+<meta name="twitter:image" content="https://plannintime.com/images/og-app-fr-1200x630.jpg">
 </head>
 <body>
 <header>
-<div style="display:flex;align-items:center;gap:10px"><img src="/favicon.png" style="width:36px;height:36px;border-radius:8px"/><div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div></div>
+<div style="display:flex;align-items:center;gap:10px"><img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/><div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div></div>
 <nav><a href="/fr/">Accueil</a><a href="/fr/planning.html">Planning</a><a href="/fr/pricing.html">Tarifs</a><a href="/fr/contact.html"><b>Contact</b></a><a class="btn" href="https://app.plannintime.com">Connexion</a></nav>
 </header>
 <main>
@@ -51,11 +55,11 @@ button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
 <p class="sub">Une question ? Un besoin entreprise ? Réponse en moins de 24h.</p>
 <div class="card">
 <div class="email-box">📧 Email : <b>contact@plannintime.com</b></div>
-<form>
-<input placeholder="Votre nom">
-<input placeholder="Votre email" type="email">
-<textarea rows="5" placeholder="Votre message"></textarea>
-<button class="btn">Envoyer le message →</button>
+<form action="mailto:contact@plannintime.com" method="post" enctype="text/plain">
+  <input name="name" placeholder="Votre nom" required>
+  <input name="email" placeholder="Votre email" type="email" required>
+  <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+  <button class="btn" type="submit">Envoyer le message →</button>
 </form>
 </div>
 </main>

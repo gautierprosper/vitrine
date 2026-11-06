@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
-Disallow: /*?*
 
 Sitemap: https://plannintime.com/sitemap.xml

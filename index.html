@@ -7,7 +7,7 @@
 <meta name="description" content="Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1.">
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/"/>
-<link rel="preload" as="image" href="/images/hero-en.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/images/hero-en.webp" type="image/webp" fetchpriority="high">
 <link rel="alternate" hreflang="en" href="https://plannintime.com/"/>
 <link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/"/>
 <link rel="alternate" hreflang="es" href="https://plannintime.com/es/"/>
@@ -25,14 +25,14 @@
 <!-- AJOUT 1 : Open Graph pour avoir une belle vignette quand on partage -->
 <meta property="og:title" content="PlannInTime - Free Construction Scheduling Software"/>
 <meta property="og:description" content="Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1."/>
-<meta property="og:image" content="https://plannintime.com/images/og-app-1200x630.png"/>
+<meta property="og:image" content="https://plannintime.com/images/og-app-fr-1200x630.jpg"/>
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="PlannInTime Gantt chart and construction planning">
 <meta property="og:type" content="website">
 <meta name="twitter:title" content="PlannInTime - Free Construction Scheduling Software">
 <meta name="twitter:description" content="Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1.">
-<meta name="twitter:image" content="https://plannintime.com/images/og-app-1200x630.png">
+<meta name="twitter:image" content="https://plannintime.com/images/og-app-fr-1200x630.jpg">
 
 <!-- AJOUT 2 : Le Schema qui fait exploser ton CTR sur Google -->
 <script type="application/ld+json">
@@ -42,7 +42,7 @@
   "name":"PlannInTime",
   "description":"Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1.",
   "url":"https://plannintime.com/",
-  "image":"https://plannintime.com/images/og-app-1200x630.png",
+  "image":"https://plannintime.com/images/og-app-fr-1200x630.jpg",
   "applicationCategory":"BusinessApplication",
   "operatingSystem":"Web",
   "inLanguage":"en",
@@ -63,7 +63,7 @@ nav a:hover{color:#2563eb}
 .hero p.sub{font-size:19px;color:#475569;margin:0 0 30px}
 .badge{display:inline-block;background:#dbeafe;color:#1d4ed8;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:16px}
 .trust{margin-top:16px;color:#475569;font-size:14px}
-.hero img{width:100%;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 20px 50px rgba(0,0,0,.1)}
+.hero img{width:100%;height:auto;aspect-ratio:600/892;object-fit:cover;display:block;border-radius:20px;border:1px solid #e2e8f0;box-shadow:0 20px 50px rgba(0,0,0,.1)} .img-card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block;border-radius:14px;border:1px solid #e2e8f0}
 .features{padding:60px 5%;display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1200px;margin:0 auto}
 .card{border:1px solid #e2e8f0;padding:28px;border-radius:18px;background:#fff;transition:.2s}
 .card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.08);border-color:#c7d2fe}
@@ -75,7 +75,6 @@ nav a:hover{color:#2563eb}
 .img-section p.lead{text-align:center;color:#cbd5e1;max-width:620px;margin:14px auto 0}
 .img-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px;max-width:1100px;margin-left:auto;margin-right:auto}
 .img-card{background:#fff;color:#0f172a;border-radius:20px;padding:14px;box-shadow:0 20px 40px rgba(0,0,0,.2)}
-.img-card img{width:100%;border-radius:14px;border:1px solid #e2e8f0}
 .img-card h4{margin:14px 10px 6px;font-size:18px}
 .img-card p{margin:0 10px 14px;color:#475569;font-size:14px}
 .cta{padding:80px 5%;text-align:center;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff}
@@ -91,7 +90,7 @@ footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top
 
 <header>
 <div style="display:flex;align-items:center;gap:10px">
-  <img src="/favicon.png" alt="PlannInTime" style="width:36px;height:36px;border-radius:8px"/>
+  <img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/>
   <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
 </div>
 <nav>
@@ -110,7 +109,7 @@ footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top
 <a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">Start for free →</a>
 <p class="trust">✓ No credit card · ✓ In 1 minute · ✓ English support</p>
 </div>
-<div><img src="/images/hero-en.webp" alt="PlannInTime Planning software" width="600" height="800" fetchpriority="high"></div>
+<div><img src="/images/hero-en.webp" alt="PlannInTime Planning software" width="600" height="892" fetchpriority="high" decoding="async"></div>
 </section>
 <section style="padding:30px 5%;background:#f0fdf4">
 <div style="max-width:900px;margin:0 auto;background:linear-gradient(135deg,#0F9D58,#0a7a44);border-radius:20px;padding:28px 28px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;box-shadow:0 12px 30px rgba(15,157,88,.35);border:1px solid rgba(255,255,255,.2)">
@@ -130,8 +129,8 @@ footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top
 <h2>Visualize, export, share</h2>
 <p class="lead">From real-time tracking to professional export for your site meetings.</p>
 <div class="img-grid">
-<div class="img-card"><img src="/images/evolution-taches-en.webp" width="900" height="444" loading="lazy" alt="Real-time task evolution"><h3 style="margin:14px 10px 6px;font-size:18px">Real-time task evolution</h3><p>Tracking by deadline or subtask progress. Each member sees their progress.</p></div>
-<div class="img-card"><img src="/images/planning-pdf-en.webp" width="600" height="892" loading="lazy" alt="Exported PDF planning"><h3 style="margin:14px 10px 6px;font-size:18px">Pro PDF export (A4 / A3 landscape)</h3><p>Generate weekly or general planning, with designations and owners.</p></div>
+<div class="img-card"><img src="/images/evolution-taches-en.webp" width="900" height="444" loading="lazy" decoding="async" alt="Real-time task evolution"><h3 style="margin:14px 10px 6px;font-size:18px">Real-time task evolution</h3><p>Tracking by deadline or subtask progress. Each member sees their progress.</p></div>
+<div class="img-card"><img src="/images/planning-pdf-en.webp" width="800" height="401" loading="lazy" decoding="async" alt="Exported PDF planning"><h3 style="margin:14px 10px 6px;font-size:18px">Pro PDF export (A4 / A3 landscape)</h3><p>Generate weekly or general planning, with designations and owners.</p></div>
 </div>
 </section>
 <section class="cta">

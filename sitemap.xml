@@ -1,44 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <!-- HOME -->
-  <url><loc>https://plannintime.com/</loc></url>
-  <url><loc>https://plannintime.com/fr/</loc></url>
-  <url><loc>https://plannintime.com/es/</loc></url>
-  <url><loc>https://plannintime.com/de/</loc></url>
-  <url><loc>https://plannintime.com/pt/</loc></url>
-  <url><loc>https://plannintime.com/zh/</loc></url>
-  <url><loc>https://plannintime.com/hi/</loc></url>
-  <url><loc>https://plannintime.com/ar/</loc></url>
+  <url>
+    <loc>https://plannintime.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plannintime.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://plannintime.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://plannintime.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/"/>
+  </url>
 
   <!-- PLANNING -->
-  <url><loc>https://plannintime.com/planning.html</loc></url>
-  <url><loc>https://plannintime.com/fr/planning.html</loc></url>
-  <url><loc>https://plannintime.com/es/planning.html</loc></url>
-  <url><loc>https://plannintime.com/de/planning.html</loc></url>
-  <url><loc>https://plannintime.com/pt/planning.html</loc></url>
-  <url><loc>https://plannintime.com/zh/planning.html</loc></url>
-  <url><loc>https://plannintime.com/hi/planning.html</loc></url>
-  <url><loc>https://plannintime.com/ar/planning.html</loc></url>
+  <url>
+    <loc>https://plannintime.com/planning.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plannintime.com/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://plannintime.com/es/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://plannintime.com/de/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/planning.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/planning.html"/>
+  </url>
 
   <!-- PRICING -->
-  <url><loc>https://plannintime.com/pricing.html</loc></url>
-  <url><loc>https://plannintime.com/fr/pricing.html</loc></url>
-  <url><loc>https://plannintime.com/es/pricing.html</loc></url>
-  <url><loc>https://plannintime.com/de/pricing.html</loc></url>
-  <url><loc>https://plannintime.com/pt/pricing.html</loc></url>
-  <url><loc>https://plannintime.com/zh/pricing.html</loc></url>
-  <url><loc>https://plannintime.com/hi/pricing.html</loc></url>
-  <url><loc>https://plannintime.com/ar/pricing.html</loc></url>
+  <url>
+    <loc>https://plannintime.com/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plannintime.com/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://plannintime.com/es/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://plannintime.com/de/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/pricing.html"/>
+  </url>
 
   <!-- CONTACT -->
-  <url><loc>https://plannintime.com/contact.html</loc></url>
-  <url><loc>https://plannintime.com/fr/contact.html</loc></url>
-  <url><loc>https://plannintime.com/es/contact.html</loc></url>
-  <url><loc>https://plannintime.com/de/contact.html</loc></url>
-  <url><loc>https://plannintime.com/pt/contact.html</loc></url>
-  <url><loc>https://plannintime.com/zh/contact.html</loc></url>
-  <url><loc>https://plannintime.com/hi/contact.html</loc></url>
-  <url><loc>https://plannintime.com/ar/contact.html</loc></url>
+  <url>
+    <loc>https://plannintime.com/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plannintime.com/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://plannintime.com/es/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://plannintime.com/de/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/contact.html"/>
+  </url>
 
 </urlset>
