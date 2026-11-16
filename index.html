@@ -41,17 +41,28 @@
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
-  "@type":"SoftwareApplication",
-  "name":"PlannInTime",
-  "description":"Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1.",
-  "url":"https://plannintime.com/",
-  "image":"https://plannintime.com/images/og-app-1200x630.jpg",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web",
-  "inLanguage":"en",
-  "isAccessibleForFree": true,
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
-  }
+  "@graph":[
+    {
+      "@type":"Organization",
+      "@id":"https://plannintime.com/#organization",
+      "name":"PlannInTime",
+      "url":"https://plannintime.com/",
+      "logo":"https://plannintime.com/favicon.png"
+    },
+    {
+      "@type":"SoftwareApplication",
+      "name":"PlannInTime",
+      "description":"Free construction scheduling software to assign tasks, track deadlines and export A3 Gantt charts. Kanban, Timeline, Calendar with auto-notifications D-3, D-1.",
+      "url":"https://plannintime.com/",
+      "image":"https://plannintime.com/images/og-app-1200x630.jpg",
+      "applicationCategory":"BusinessApplication",
+      "operatingSystem":"Web",
+      "inLanguage":"en",
+      "isAccessibleForFree": true,
+      "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}
+    }
+  ]
+}
 </script>
 
 <style>
