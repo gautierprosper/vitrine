@@ -31,6 +31,8 @@ input:focus,textarea:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3p
 button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
 .email-box{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:center;margin-bottom:20px}
 @keyframes shine{to{background-position:200% center}}
+footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
+footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 </style>
 <meta property="og:url" content="https://plannintime.com/contact">
 <meta property="og:locale" content="en_US">
@@ -50,7 +52,7 @@ button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
 {
   "@context":"https://schema.org",
   "@graph":[
-    {"@type":"Organization","@id":"https://plannintime.com/#organization","name":"PlannInTime","url":"https://plannintime.com/","logo":"https://plannintime.com/favicon.png"},
+    {"@type":"Organization","@id":"https://plannintime.com/#organization","name":"PlannInTime","url":"https://plannintime.com/","logo":"https://plannintime.com/favicon.png","email":"contact@plannintime.com"},
     {"@type":"ContactPage","name":"Contact PlannInTime","url":"https://plannintime.com/contact","inLanguage":"en"}
   ]
 }
@@ -62,14 +64,14 @@ button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
   <img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/>
   <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
 </div>
-<nav><a href="/">Home</a><a href="/planning">Planning</a><a href="/pricing">Pricing</a><a href="/contact"><b>Contact</b></a><a class="btn" href="https://app.plannintime.com">Login</a></nav>
+<nav><a href="/">Home</a><a href="/planning">Planning</a><a href="/pricing">Pricing</a><a href="/contact"><b>Contact</b></a><a href="/about-us">About Us</a><a class="btn" href="https://app.plannintime.com">Login</a></nav>
 </header>
 <main>
 <h1>Contact us</h1>
 <p class="sub">A question? An enterprise need? Reply in less than 24h.</p>
 <div class="card">
-<div class="email-box">📧 Email: <b>contact@plannintime.com</b></div>
-<form action="https://formspree.io/f/xeagzkyy method="POST">
+<div class="email-box">📧 Email: <a href="mailto:contact@plannintime.com" style="color:#2563eb;text-decoration:none;font-weight:800">contact@plannintime.com</a></div>
+<form action="https://formspree.io/f/xeagzkyy" method="POST">
 <input name="name" placeholder="Your name" autocomplete="name" required>
 <input name="email" placeholder="Your email" type="email" autocomplete="email" required>
 <textarea name="message" rows="5" placeholder="Your message" required></textarea>
@@ -77,5 +79,14 @@ button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
 </form>
 </div>
 </main>
+
+<footer>
+© 2026 PlannInTime - plannintime.com<br><br>
+<a href="/planning">Planning</a> | <a href="/pricing">Pricing</a> | <a href="/about-us">About Us</a> | <a href="/contact">Contact</a><br><br>
+<a href="https://www.facebook.com/share/1CVwcohVgU/" target="_blank" rel="noopener">📘 Facebook</a> |
+<a href="https://www.youtube.com/@legestionnaireprofessionne9699" target="_blank" rel="noopener">▶️ YouTube</a> |
+<a href="mailto:contact@plannintime.com">📧 Contact</a>
+</footer>
+
 </body>
 </html>

@@ -58,4 +58,18 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/contact"/>
   </url>
 
+  <!-- ABOUT-US -->
+  <url>
+    <loc>https://plannintime.com/about-us</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://plannintime.com/about-us"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/about-us"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://plannintime.com/es/about-us"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://plannintime.com/de/about-us"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/about-us"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/about-us"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/about-us"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/about-us"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://plannintime.com/about-us"/>
+  </url>
+
 </urlset>

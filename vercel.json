@@ -10,6 +10,7 @@
     { "source": "/pricing", "destination": "/pricing.html" },
     { "source": "/planning", "destination": "/planning.html" },
     { "source": "/contact", "destination": "/contact.html" },
+    { "source": "/about-us", "destination": "/about-us.html" },
 
     { "source": "/fr", "destination": "/fr/index.html" },
     { "source": "/fr/:path*", "destination": "/fr/:path*" },
