@@ -7,7 +7,36 @@
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/ar/planning"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/planning"/><link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/planning"/><link rel="alternate" hreflang="es" href="https://plannintime.com/es/planning"/><link rel="alternate" hreflang="de" href="https://plannintime.com/de/planning"/><link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/planning"/><link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/planning"/><link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/planning"/><link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/planning"/><link rel="alternate" hreflang="x-default" href="https://plannintime.com/planning"/>
-<style>*{box-sizing:border-box}body{font-family:Tajawal,Inter,system-ui;margin:0;color:#0f172a;background:#fff;line-height:1.7}header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;position:sticky;top:0;background:#fff;z-index:10}nav a{margin:0 10px;text-decoration:none;color:#334155}.btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:600}.hero{padding:70px 5%;text-align:center;background:linear-gradient(180deg,#eff6ff,#f5f3ff 60%,#fff)}.hero h1{font-size:46px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:0 0 16px}.steps{max-width:1000px;margin:0 auto;padding:50px 5%;display:grid;gap:24px}.step{display:flex;gap:20px;border:1px solid #e2e8f0;border-radius:20px;padding:30px;background:#fff}.num{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex-shrink:0}.step:nth-child(1) .num{background:linear-gradient(135deg,#2563eb,#3b82f6)}.step:nth-child(2) .num{background:linear-gradient(135deg,#7c3aed,#a855f7)}.step:nth-child(3) .num{background:linear-gradient(135deg,#06b6d4,#22d3ee)}footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}@keyframes shine{to{background-position:200% center}}</style>
+<style>
+*{box-sizing:border-box}
+body{font-family:Tajawal,Inter,system-ui;margin:0;color:#0f172a;background:#fff}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:12px}
+nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+nav a{margin:0 8px;text-decoration:none;color:#334155;font-weight:500;white-space:nowrap}
+nav a:hover{color:#2563eb}
+nav a.active{color:#2563eb;font-weight:700}
+
+@media(max-width:800px){
+  header{justify-content:center;text-align:center;padding:12px 4%}
+  nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav a{margin:0 8px;font-size:14px;flex-shrink:0}
+  nav .btn{padding:8px 14px!important;flex-shrink:0}
+}
+.btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:600}
+.hero{padding:70px 5%;text-align:center;background:linear-gradient(180deg,#eff6ff,#f5f3ff 60%,#fff)}
+.hero h1{font-size:46px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:0 0 16px;line-height:1.1}
+.steps{max-width:1000px;margin:0 auto;padding:50px 5%;display:grid;gap:24px}
+.step{display:flex;gap:20px;border:1px solid #e2e8f0;border-radius:20px;padding:30px;background:#fff;align-items:flex-start}
+.num{flex-shrink:0;width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:20px}
+.step:nth-child(1) .num{background:linear-gradient(135deg,#2563eb,#3b82f6)}
+.step:nth-child(2) .num{background:linear-gradient(135deg,#7c3aed,#a855f7)}
+.step:nth-child(3) .num{background:linear-gradient(135deg,#06b6d4,#22d3ee)}
+.step h2{margin:0 0 8px;font-size:22px}
+.step p{margin:0;color:#64748b}
+footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
+footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
+</style>
 <meta property="og:url" content="https://plannintime.com/ar/planning">
 <meta property="og:locale" content="ar_AR">
 <meta property="og:site_name" content="PlannInTime">
@@ -33,7 +62,15 @@
 </script>
 </head>
 <body>
-<header><div style="display:flex;align-items:center;gap:10px"><img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/><div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div></div><nav><a href="/ar">الرئيسية</a><a href="/ar/planning"><b>التخطيط</b></a><a href="/ar/pricing">الأسعار</a><a href="/ar/contact">اتصل بنا</a><a href="/ar/about-us">من نحن</a><a class="btn" href="https://app.plannintime.com">تسجيل الدخول</a></nav></header>
+<header><div style="display:flex;align-items:center;gap:10px"><img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/><div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div></div><nav>
+<a href="/ar">الرئيسية</a>
+<a href="/ar/planning" class="active">التخطيط</a>
+<a href="/ar/pricing">الأسعار</a>
+<a href="/ar/about-us">من نحن</a>
+<a href="/ar/contact">اتصل بنا</a>
+<a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener" style="padding:8px 16px">تسجيل الدخول</a>
+</nav>
+</header>
 <div class="hero"><h1>تخطيط يعمل من أجلك</h1><p style="color:#64748b;font-size:19px;max-width:620px;margin:0 auto">المشكلة ليست في إنشاء المهام. بل في ضمان إنجازها في الوقت المحدد.</p></div>
 <div class="steps"><div class="step"><div class="num">1</div><div><h2>⚡ تخصيص فائق السرعة</h2><p>أنشئ مهمة، اختر مسؤولاً، تاريخ استحقاق. PlannInTime يتولى الباقي.</p></div></div><div class="step"><div class="num">2</div><div><h2>🔔 إشعارات قابلة للتخصيص</h2><p>فرقنا. اضبط: إشعار العضو في D-3، المسؤول في D-1، الجميع في H-2. عبر البريد الإلكتروني، الدفع وداخل التطبيق.</p></div></div><div class="step"><div class="num">3</div><div><h2>📊 تتبع وتقييم</h2><p>طرق عرض كانبان، قائمة، مخطط زمني وتقويم. اعرف في لمحة من متقدم ومن متأخر وقيّم عبء العمل.</p></div></div></div>
 <div style="text-align:center;padding:40px 5% 70px"><a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener">جرّب التخطيط مجاناً →</a></div>

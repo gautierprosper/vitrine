@@ -7,7 +7,34 @@
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/zh/planning"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/planning"/><link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/planning"/><link rel="alternate" hreflang="es" href="https://plannintime.com/es/planning"/><link rel="alternate" hreflang="de" href="https://plannintime.com/de/planning"/><link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/planning"/><link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/planning"/><link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/planning"/><link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/planning"/><link rel="alternate" hreflang="x-default" href="https://plannintime.com/planning"/>
-<style>*{box-sizing:border-box}body{font-family:Inter,system-ui;margin:0;color:#0f172a;background:#fff;line-height:1.6}header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;position:sticky;top:0;background:#fff;z-index:10}nav a{margin:0 10px;text-decoration:none;color:#334155}.btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:600}.hero{padding:70px 5%;text-align:center;background:linear-gradient(180deg,#eff6ff,#f5f3ff 60%,#fff)}.hero h1{font-size:46px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:0 0 16px}.steps{max-width:1000px;margin:0 auto;padding:50px 5%;display:grid;gap:24px}.step{display:flex;gap:20px;border:1px solid #e2e8f0;border-radius:20px;padding:30px;background:#fff}.num{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex-shrink:0}.step:nth-child(1) .num{background:linear-gradient(135deg,#2563eb,#3b82f6)}.step:nth-child(2) .num{background:linear-gradient(135deg,#7c3aed,#a855f7)}.step:nth-child(3) .num{background:linear-gradient(135deg,#06b6d4,#22d3ee)}footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}@keyframes shine{to{background-position:200% center}}</style>
+<style>*{box-sizing:border-box}body{font-family:Inter,system-ui;margin:0;color:#0f172a;background:#fff;line-height:1.6}
+*{box-sizing:border-box}body{font-family:Inter,system-ui;margin:0;color:#0f172a;background:#fff;line-height:1.6}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:12px}
+nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+nav a{margin:0 8px;text-decoration:none;color:#334155;font-weight:500;white-space:nowrap}
+nav a:hover{color:#2563eb}
+nav a.active{color:#2563eb;font-weight:700}
+.btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block}
+.hero{padding:70px 5%;text-align:center;background:linear-gradient(180deg,#eff6ff,#f5f3ff 60%,#fff)}
+.hero h1{font-size:46px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:0 0 16px}
+.steps{max-width:1000px;margin:0 auto;padding:50px 5%;display:grid;gap:24px}
+.step{display:flex;gap:20px;border:1px solid #e2e8f0;border-radius:20px;padding:30px;background:#fff}
+.num{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;flex-shrink:0}
+.step:nth-child(1) .num{background:linear-gradient(135deg,#2563eb,#3b82f6)}
+.step:nth-child(2) .num{background:linear-gradient(135deg,#7c3aed,#a855f7)}
+.step:nth-child(3) .num{background:linear-gradient(135deg,#06b6d4,#22d3ee)}
+footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
+footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
+@keyframes shine{to{background-position:200% center}}
+
+@media(max-width:800px){
+  header{justify-content:center;text-align:center;padding:12px 4%}
+  nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav a{margin:0 8px;font-size:14px;flex-shrink:0}
+  nav .btn{padding:8px 14px!important;flex-shrink:0}
+}
+</style>
 <meta property="og:url" content="https://plannintime.com/zh/planning">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:site_name" content="PlannInTime">
@@ -33,7 +60,16 @@
 </script>
 </head>
 <body>
-<header><div style="display:flex;align-items:center;gap:10px"><img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/><div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div></div><nav><a href="/zh">首页</a><a href="/zh/planning"><b>规划</b></a><a href="/zh/pricing">价格</a><a href="/zh/contact">联系</a><a href="/zh/about-us">关于我们</a><a class="btn" href="https://app.plannintime.com">登录</a></nav></header>
+<header><div style="display:flex;align-items:center;gap:10px"><img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/><div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div></div>
+<nav>
+<a href="/zh">首页</a>
+<a href="/zh/planning" class="active">规划</a>
+<a href="/zh/pricing">价格</a>
+<a href="/zh/about-us">关于我们</a>
+<a href="/zh/contact">联系</a>
+<a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener" style="padding:8px 16px">登录</a>
+</nav>
+</header>
 <div class="hero"><h1>为您工作的规划</h1><p style="color:#64748b;font-size:19px;max-width:620px;margin:0 auto">问题不是创建任务。而是确保它们按时完成。</p></div>
 <div class="steps"><div class="step"><div class="num">1</div><div><h2>⚡ 极速分配</h2><p>创建任务，选择负责人，截止日期。PlannInTime 处理其余部分。</p></div></div><div class="step"><div class="num">2</div><div><h2>🔔 可自定义通知</h2><p>我们的差异化。设置：在 D-3 通知成员，在 D-1 通知经理，在 H-2 通知所有人。通过邮件、推送和应用内。</p></div></div><div class="step"><div class="num">3</div><div><h2>📊 跟踪与评估</h2><p>看板、列表、时间线和日历视图。一目了然谁超前、谁落后，并评估工作量。</p></div></div></div>
 <div style="text-align:center;padding:40px 5% 70px"><a class="btn" href="https://app.plannintime.com">免费试用规划 →</a></div>

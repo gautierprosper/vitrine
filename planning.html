@@ -18,9 +18,20 @@
 <link rel="alternate" hreflang="x-default" href="https://plannintime.com/planning"/>
 <style>
 *{box-sizing:border-box}body{font-family:Inter,system-ui;margin:0;color:#0f172a;background:#fff;line-height:1.6}
-header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;position:sticky;top:0;background:#fff;z-index:10}
-.logo{font-weight:800;font-size:22px;background:linear-gradient(135deg,#2563eb,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
-nav a{margin:0 10px;text-decoration:none;color:#334155;font-weight:500}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px 5%;border-bottom:1px solid #e2e8f0;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);position:sticky;top:0;z-index:10;flex-wrap:wrap;gap:12px}
+nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+nav a{margin:0 8px;text-decoration:none;color:#334155;font-weight:500;white-space:nowrap}
+nav a:hover{color:#2563eb}
+nav a.active{color:#2563eb;font-weight:700}
+
+@media(max-width:800px){
+  header{justify-content:center;text-align:center;padding:12px 4%}
+  nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav a{margin:0 8px;font-size:14px;flex-shrink:0}
+  nav .btn{padding:8px 14px!important;flex-shrink:0}
+}
+
 .btn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff!important;padding:12px 24px;border-radius:10px;text-decoration:none;font-weight:600;display:inline-block}
 .hero{padding:70px 5%;text-align:center;background:linear-gradient(180deg,#eff6ff,#f5f3ff 60%,#fff)}
 .hero h1{font-size:46px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-background-clip:text;-webkit-text-fill-color:transparent;margin:0 0 16px;line-height:1.1}
@@ -67,7 +78,14 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
   <img src="/favicon.png" alt="PlannInTime" width="36" height="36" style="width:36px;height:36px;border-radius:8px"/>
   <div style="font-weight:900;font-size:22px;letter-spacing:1.5px;background:linear-gradient(90deg,#065f46,#FFC107,#065f46);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 3s linear infinite">PLANNINTIME</div>
 </div>
-<nav><a href="/">Home</a><a href="/planning"><b>Planning</b></a><a href="/pricing">Pricing</a><a href="/contact">Contact</a><a href="/about-us">About Us</a><a class="btn" href="https://app.plannintime.com">Login</a></nav>
+<nav>
+<a href="/">Home</a>
+<a href="/planning" class="active">Planning</a>
+<a href="/pricing">Pricing</a>
+<a href="/about-us">About Us</a>
+<a href="/contact">Contact</a>
+<a class="btn" href="https://app.plannintime.com" target="_blank" rel="noopener" style="padding:8px 16px">Login</a>
+</nav>
 </header>
 <div class="hero">
 <h1>A planning that works for you</h1>
