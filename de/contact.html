@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kontakt | PlannInTime</title>
-<meta name="description" content="Kontaktieren Sie den PlannInTime Support. Antwort in weniger als 24h für Unternehmensanfragen, Demos und Hilfe.">
+<meta name="description" content="Kontaktieren Sie den PlannInTime Support. Antwort in weniger als 24h. Kostenlose Bauzeitplan-Software in 8 Sprachen: Deutsch, Englisch, Französisch, Spanisch, Portugiesisch, Chinesisch, Hindi und Arabisch.">
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/de/contact"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/contact"/><link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/contact"/><link rel="alternate" hreflang="es" href="https://plannintime.com/es/contact"/><link rel="alternate" hreflang="de" href="https://plannintime.com/de/contact"/><link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/contact"/><link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/contact"/><link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/contact"/><link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/contact"/><link rel="alternate" hreflang="x-default" href="https://plannintime.com/contact"/>
@@ -12,7 +12,6 @@ nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
 nav a{margin:0 8px;text-decoration:none;color:#334155;font-weight:500;white-space:nowrap}
 nav a:hover{color:#2563eb}
 nav a.active{color:#2563eb;font-weight:700}
-
 @media(max-width:800px){
   header{justify-content:center;text-align:center;padding:12px 4%}
   nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -29,6 +28,9 @@ input,textarea{width:100%;padding:14px;margin:10px 0;border:1px solid #cbd5e1;bo
 button.btn{border:none;cursor:pointer;width:100%;padding:14px}
 @keyframes shine{to{background-position:200% center}}
 .email-box{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:center;margin-bottom:20px}
+.seo-block{margin-top:40px;color:#334155;line-height:1.7}
+.seo-block h2{font-size:22px;color:#0f172a}
+.seo-block h3{font-size:18px;color:#0f172a;margin-top:24px}
 footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
 footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 </style>
@@ -67,13 +69,37 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 </nav>
 </header>
 <main>
-<h1>Kontaktieren Sie uns</h1><p class="sub">Eine Frage? Antwort in weniger als 24 Stunden.</p><div class="card"><div class="email-box">📧 E-Mail: <a href="mailto:contact@plannintime.com" style="color:#2563eb;text-decoration:none;font-weight:800">contact@plannintime.com</a></div>
-<form action="https://formspree.io/f/xeagzkyy" method="POST">
+<h1>Kontaktieren Sie uns</h1><p class="sub">Eine Frage? Antwort in weniger als 24 Stunden.</p>
+<div class="card"><div class="email-box">📧 E-Mail: <a href="mailto:contact@plannintime.com" style="color:#2563eb;text-decoration:none;font-weight:800">contact@plannintime.com</a></div>
+<form id="contactForm">
   <input name="name" placeholder="Ihr Name" autocomplete="name" required>
   <input name="email" placeholder="Ihre E-Mail" type="email" autocomplete="email" required>
   <textarea name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
-  <button class="btn" type="submit">Nachricht senden →</button>
+  <button class="btn" type="submit" id="sendBtn">Nachricht senden →</button>
+  <p id="formMsg" style="display:none;text-align:center;font-weight:700;color:#065f46;margin-top:14px">✅ Nachricht gesendet! Wir antworten in weniger als 24h.</p>
 </form>
+</div>
+
+<div class="seo-block">
+<h2>Kontakt PlannInTime - Support für Bauzeitplanung</h2>
+<p>Sind Sie Bauleiter, Bauingenieur, Bauunternehmer oder Bauherr und möchten einen klaren und professionellen Bauzeitplan erstellen? PlannInTime hilft Ihnen, Ihr Projekt in wenigen Minuten zu planen, ohne Stunden mit Excel zu verlieren. Unser Team antwortet in weniger als 24 Stunden, von Montag bis Samstag, und die App ist in 8 Sprachen verfügbar: Deutsch, Englisch, Französisch, Spanisch, Portugiesisch, Chinesisch, Hindi und Arabisch.</p>
+
+<h3>Was können Sie uns fragen?</h3>
+<ul>
+<li>Wie Sie Ihren ersten kostenlosen Bauzeitplan erstellen</li>
+<li>Wie Sie Ihr Projekt aus Excel importieren</li>
+<li>Wie Sie Ihr Gantt-Diagramm und Ihr A3-PDF erstellen</li>
+<li>Wie Sie Ihre Teams, Aufgaben und Fristen mit PlannInTime verwalten</li>
+<li>Unternehmensanfragen, Demos und individuelle Planung für große Projekte</li>
+</ul>
+
+<h3>Für wen ist PlannInTime?</h3>
+<p>PlannInTime ist für Bauleiter, Bauunternehmer, Ingenieure und Bauherren, die einen klaren, professionellen Zeitplan wollen, ohne Stunden mit Excel zu verlieren. Wo auch immer Sie bauen, beschreiben Sie Ihr Projekt, Ihre Anzahl an Arbeitern und Ihre Frist im Formular oben, und wir zeigen Ihnen, wie Sie es am besten mit PlannInTime organisieren.</p>
+
+<h3>Häufige Fragen</h3>
+<p><strong>Ist PlannInTime kostenlos?</strong><br>Ja, Ihr erster Zeitplan ist kostenlos. Sie können ein professionelles Gantt-Diagramm ohne Excel erstellen.</p>
+<p><strong>Funktioniert es auf dem Handy?</strong><br>Ja, PlannInTime funktioniert auf Handy, Tablet und Computer.</p>
+<p><strong>Wie schnell antworten Sie?</strong><br>In weniger als 24 Stunden, per E-Mail an contact@plannintime.com.</p>
 </div>
 </main>
 <footer>
@@ -83,5 +109,39 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 <a href="https://www.youtube.com/@legestionnaireprofessionne9699" target="_blank" rel="noopener" style="color:#FF0000">▶️ YouTube</a> |
 <a href="mailto:contact@plannintime.com" style="color:#0f172a">📧 Contact</a>
 </footer>
+
+<script>
+const form = document.getElementById('contactForm');
+const btn = document.getElementById('sendBtn');
+const msg = document.getElementById('formMsg');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  btn.textContent = 'Wird gesendet...';
+  btn.disabled = true;
+  const data = new FormData(form);
+  try {
+    const res = await fetch('https://formspree.io/f/xeagzkyy', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.reset();
+      msg.style.display = 'block';
+      btn.textContent = 'Nachricht senden →';
+      btn.disabled = false;
+    } else {
+      alert('Fehler, bitte erneut versuchen oder an contact@plannintime.com schreiben');
+      btn.textContent = 'Nachricht senden →';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    alert('Verbindungsfehler');
+    btn.textContent = 'Nachricht senden →';
+    btn.disabled = false;
+  }
+});
+</script>
+
 </body>
 </html>

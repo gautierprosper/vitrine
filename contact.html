@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contact | PlannInTime - Free Support</title>
-<meta name="description" content="Contact PlannInTime support. Answer in less than 24h for enterprise needs, demos and help with free construction scheduling software.">
+<meta name="description" content="Contact PlannInTime support. Answer in less than 24h. Free construction scheduling software in 8 languages: English, French, Spanish, German, Portuguese, Chinese, Hindi and Arabic.">
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/contact"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/contact"/>
@@ -24,7 +24,6 @@ nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
 nav a{margin:0 8px;text-decoration:none;color:#334155;font-weight:500;white-space:nowrap}
 nav a:hover{color:#2563eb}
 nav a.active{color:#2563eb;font-weight:700}
-
 @media(max-width:800px){
   header{justify-content:center;text-align:center;padding:12px 4%}
   nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -41,6 +40,9 @@ input,textarea{width:100%;padding:14px;margin:10px 0;border:1px solid #cbd5e1;bo
 input:focus,textarea:focus{outline:none;border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.15)}
 button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
 .email-box{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:center;margin-bottom:20px}
+.seo-block{margin-top:40px;color:#334155;line-height:1.7}
+.seo-block h2{font-size:22px;color:#0f172a}
+.seo-block h3{font-size:18px;color:#0f172a;margin-top:24px}
 @keyframes shine{to{background-position:200% center}}
 footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
 footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
@@ -89,12 +91,35 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 <p class="sub">A question? An enterprise need? Reply in less than 24h.</p>
 <div class="card">
 <div class="email-box">📧 Email: <a href="mailto:contact@plannintime.com" style="color:#2563eb;text-decoration:none;font-weight:800">contact@plannintime.com</a></div>
-<form action="https://formspree.io/f/xeagzkyy" method="POST">
+<form id="contactForm">
 <input name="name" placeholder="Your name" autocomplete="name" required>
 <input name="email" placeholder="Your email" type="email" autocomplete="email" required>
 <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-<button class="btn" type="submit">Send message →</button>
+<button class="btn" type="submit" id="sendBtn">Send message →</button>
+<p id="formMsg" style="display:none;text-align:center;font-weight:700;color:#065f46;margin-top:14px">✅ Message sent! We reply in less than 24h.</p>
 </form>
+</div>
+
+<div class="seo-block">
+<h2>Contact PlannInTime - Construction Planning Support</h2>
+<p>Are you a site manager, construction engineer, contractor or project owner and do you want to create a clear and professional construction schedule? PlannInTime helps you plan your project in minutes, without wasting hours on Excel. Our team replies in less than 24 hours, from Monday to Saturday, and the app is available in 8 languages: English, French, Spanish, German, Portuguese, Chinese, Hindi and Arabic.</p>
+
+<h3>What can you ask us?</h3>
+<ul>
+<li>How to create your first free construction schedule</li>
+<li>How to import your project from Excel</li>
+<li>How to generate your Gantt chart and your A3 PDF</li>
+<li>How to manage your teams, tasks and deadlines with PlannInTime</li>
+<li>Enterprise needs, demos and custom planning for large projects</li>
+</ul>
+
+<h3>Who is PlannInTime for?</h3>
+<p>PlannInTime is for site managers, contractors, engineers and project owners who want a clear, professional schedule without wasting hours on Excel. Wherever you build, describe your project, your number of workers and your deadline in the form above, and we will show you the best way to organize it with PlannInTime.</p>
+
+<h3>Frequently Asked Questions</h3>
+<p><strong>Is PlannInTime free?</strong><br>Yes, your first schedule is free. You can create a professional Gantt chart without Excel.</p>
+<p><strong>Does it work on phone?</strong><br>Yes, PlannInTime works on phone, tablet and computer.</p>
+<p><strong>How fast do you reply?</strong><br>In less than 24 hours, by email at contact@plannintime.com.</p>
 </div>
 </main>
 
@@ -105,6 +130,39 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 <a href="https://www.youtube.com/@legestionnaireprofessionne9699" target="_blank" rel="noopener">▶️ YouTube</a> |
 <a href="mailto:contact@plannintime.com">📧 Contact</a>
 </footer>
+
+<script>
+const form = document.getElementById('contactForm');
+const btn = document.getElementById('sendBtn');
+const msg = document.getElementById('formMsg');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  const data = new FormData(form);
+  try {
+    const res = await fetch('https://formspree.io/f/xeagzkyy', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.reset();
+      msg.style.display = 'block';
+      btn.textContent = 'Send message →';
+      btn.disabled = false;
+    } else {
+      alert('Error, please try again or write to contact@plannintime.com');
+      btn.textContent = 'Send message →';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    alert('Connection error');
+    btn.textContent = 'Send message →';
+    btn.disabled = false;
+  }
+});
+</script>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Contacto | PlannInTime</title>
-<meta name="description" content="Contacta con el soporte de PlannInTime. Respuesta en menos de 24h para necesidades empresariales, demos y ayuda.">
+<meta name="description" content="Contacta con el soporte de PlannInTime. Respuesta en menos de 24h. Software gratuito de planificación de obras en 8 idiomas: español, inglés, francés, alemán, portugués, chino, hindi y árabe.">
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/es/contact"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/contact"/>
@@ -22,7 +22,6 @@ nav{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
 nav a{margin:0 8px;text-decoration:none;color:#334155;font-weight:500;white-space:nowrap}
 nav a:hover{color:#2563eb}
 nav a.active{color:#2563eb;font-weight:700}
-
 @media(max-width:800px){
   header{justify-content:center;text-align:center;padding:12px 4%}
   nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -38,6 +37,9 @@ h1{font-size:42px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-bac
 input,textarea{width:100%;padding:14px;margin:10px 0;border:1px solid #cbd5e1;border-radius:12px;font-size:15px}
 button.btn{border:none;cursor:pointer;width:100%;font-size:16px;padding:14px}
 .email-box{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:center;margin-bottom:20px}
+.seo-block{margin-top:40px;color:#334155;line-height:1.7}
+.seo-block h2{font-size:22px;color:#0f172a}
+.seo-block h3{font-size:18px;color:#0f172a;margin-top:24px}
 @keyframes shine{to{background-position:200% center}}
 footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
 footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
@@ -83,12 +85,35 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 <p class="sub">¿Una pregunta? ¿Una necesidad empresarial? Respuesta en menos de 24h.</p>
 <div class="card">
 <div class="email-box">📧 Email: <a href="mailto:contact@plannintime.com" style="color:#2563eb;text-decoration:none;font-weight:800">contact@plannintime.com</a></div>
-<form action="https://formspree.io/f/xeagzkyy" method="POST">
+<form id="contactForm">
   <input name="name" placeholder="Tu nombre" autocomplete="name" required>
   <input name="email" placeholder="Tu email" type="email" autocomplete="email" required>
   <textarea name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-  <button class="btn" type="submit">Enviar mensaje →</button>
+  <button class="btn" type="submit" id="sendBtn">Enviar mensaje →</button>
+  <p id="formMsg" style="display:none;text-align:center;font-weight:700;color:#065f46;margin-top:14px">✅ ¡Mensaje enviado! Respondemos en menos de 24h.</p>
 </form>
+</div>
+
+<div class="seo-block">
+<h2>Contacta con PlannInTime - Soporte de planificación de obras</h2>
+<p>¿Eres jefe de obra, ingeniero de construcción, contratista o propietario de un proyecto y quieres crear un cronograma de obra claro y profesional? PlannInTime te ayuda a planificar tu proyecto en minutos, sin perder horas en Excel. Nuestro equipo responde en menos de 24 horas, de lunes a sábado, y la app está disponible en 8 idiomas: español, inglés, francés, alemán, portugués, chino, hindi y árabe.</p>
+
+<h3>¿Qué puedes preguntarnos?</h3>
+<ul>
+<li>Cómo crear tu primer cronograma de obra gratuito</li>
+<li>Cómo importar tu proyecto desde Excel</li>
+<li>Cómo generar tu diagrama de Gantt y tu PDF A3</li>
+<li>Cómo gestionar tus equipos, tareas y plazos con PlannInTime</li>
+<li>Necesidades empresariales, demos y planificación personalizada para grandes proyectos</li>
+</ul>
+
+<h3>¿Para quién es PlannInTime?</h3>
+<p>PlannInTime es para jefes de obra, contratistas, ingenieros y propietarios de proyectos que quieren un cronograma claro y profesional sin perder horas en Excel. Donde sea que construyas, describe tu proyecto, tu número de trabajadores y tu plazo en el formulario de arriba, y te mostraremos la mejor manera de organizarlo con PlannInTime.</p>
+
+<h3>Preguntas frecuentes</h3>
+<p><strong>¿PlannInTime es gratis?</strong><br>Sí, tu primer cronograma es gratis. Puedes crear un diagrama de Gantt profesional sin Excel.</p>
+<p><strong>¿Funciona en el móvil?</strong><br>Sí, PlannInTime funciona en móvil, tablet y ordenador.</p>
+<p><strong>¿Qué tan rápido responden?</strong><br>En menos de 24 horas, por email a contact@plannintime.com.</p>
 </div>
 </main>
 <footer>
@@ -98,5 +123,39 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 <a href="https://www.youtube.com/@legestionnaireprofessionne9699" target="_blank" rel="noopener" style="color:#FF0000">▶️ YouTube</a> |
 <a href="mailto:contact@plannintime.com" style="color:#0f172a">📧 Contact</a>
 </footer>
+
+<script>
+const form = document.getElementById('contactForm');
+const btn = document.getElementById('sendBtn');
+const msg = document.getElementById('formMsg');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  btn.textContent = 'Enviando...';
+  btn.disabled = true;
+  const data = new FormData(form);
+  try {
+    const res = await fetch('https://formspree.io/f/xeagzkyy', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.reset();
+      msg.style.display = 'block';
+      btn.textContent = 'Enviar mensaje →';
+      btn.disabled = false;
+    } else {
+      alert('Error, inténtalo de nuevo o escribe a contact@plannintime.com');
+      btn.textContent = 'Enviar mensaje →';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    alert('Error de conexión');
+    btn.textContent = 'Enviar mensaje →';
+    btn.disabled = false;
+  }
+});
+</script>
+
 </body>
 </html>

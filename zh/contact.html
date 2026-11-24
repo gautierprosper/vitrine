@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>联系 | PlannInTime</title>
-<meta name="description" content="联系 PlannInTime 支持团队。企业需求、演示和帮助，24小时内回复。">
+<meta name="description" content="联系 PlannInTime 支持团队。24小时内回复。免费建筑进度软件，支持8种语言：中文、英文、法文、西班牙文、德文、葡萄牙文、印地文和阿拉伯文。">
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="canonical" href="https://plannintime.com/zh/contact"/>
 <link rel="alternate" hreflang="en" href="https://plannintime.com/contact"/><link rel="alternate" hreflang="fr" href="https://plannintime.com/fr/contact"/><link rel="alternate" hreflang="es" href="https://plannintime.com/es/contact"/><link rel="alternate" hreflang="de" href="https://plannintime.com/de/contact"/><link rel="alternate" hreflang="pt" href="https://plannintime.com/pt/contact"/><link rel="alternate" hreflang="zh" href="https://plannintime.com/zh/contact"/><link rel="alternate" hreflang="hi" href="https://plannintime.com/hi/contact"/><link rel="alternate" hreflang="ar" href="https://plannintime.com/ar/contact"/><link rel="alternate" hreflang="x-default" href="https://plannintime.com/contact"/>
@@ -20,10 +20,12 @@ h1{font-size:42px;background:linear-gradient(135deg,#1e293b,#4c1d95);-webkit-bac
 input,textarea{width:100%;padding:14px;margin:10px 0;border:1px solid #cbd5e1;border-radius:12px}
 button.btn{border:none;cursor:pointer;width:100%;padding:14px}
 .email-box{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:16px;text-align:center;margin-bottom:20px}
+.seo-block{margin-top:40px;color:#334155;line-height:1.7}
+.seo-block h2{font-size:22px;color:#0f172a}
+.seo-block h3{font-size:18px;color:#0f172a;margin-top:24px}
 footer{padding:30px 5%;text-align:center;color:#475569;font-size:14px;border-top:1px solid #f1f5f9}
 footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 @keyframes shine{to{background-position:200% center}}
-
 @media(max-width:800px){
   header{justify-content:center;text-align:center;padding:12px 4%}
   nav{width:100%;justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
@@ -68,13 +70,37 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 </nav>
 </header>
 <main>
-<h1>联系我们</h1><p style="color:#64748b;font-size:18px;margin-bottom:30px">有问题？24小时内回复。</p><div class="card"><div class="email-box">📧 邮箱: <a href="mailto:contact@plannintime.com" style="color:#2563eb;text-decoration:none;font-weight:800">contact@plannintime.com</a></div>
-<form action="https://formspree.io/f/xeagzkyy" method="POST">
+<h1>联系我们</h1><p style="color:#64748b;font-size:18px;margin-bottom:30px">有问题？24小时内回复。</p>
+<div class="card"><div class="email-box">📧 邮箱: <a href="mailto:contact@plannintime.com" style="color:#2563eb;text-decoration:none;font-weight:800">contact@plannintime.com</a></div>
+<form id="contactForm">
   <input name="name" placeholder="您的姓名" autocomplete="name" required>
   <input name="email" placeholder="您的邮箱" type="email" autocomplete="email" required>
   <textarea name="message" rows="5" placeholder="您的留言" required></textarea>
-  <button class="btn" type="submit">发送消息 →</button>
+  <button class="btn" type="submit" id="sendBtn">发送消息 →</button>
+  <p id="formMsg" style="display:none;text-align:center;font-weight:700;color:#065f46;margin-top:14px">✅ 消息已发送！我们会在24小时内回复。</p>
 </form>
+</div>
+
+<div class="seo-block">
+<h2>联系 PlannInTime - 建筑规划支持</h2>
+<p>您是施工经理、建筑工程师、承包商还是项目业主，想创建一个清晰专业的建筑进度表吗？PlannInTime 帮助您在几分钟内规划项目，无需在 Excel 上浪费数小时。我们的团队会在周一至周六 24 小时内回复，应用支持 8 种语言：中文、英文、法文、西班牙文、德文、葡萄牙文、印地文和阿拉伯文。</p>
+
+<h3>您可以问我们什么？</h3>
+<ul>
+<li>如何创建您的第一个免费建筑进度表</li>
+<li>如何从 Excel 导入您的项目</li>
+<li>如何生成您的甘特图和 A3 PDF</li>
+<li>如何使用 PlannInTime 管理您的团队、任务和截止日期</li>
+<li>企业需求、演示和大型项目的定制规划</li>
+</ul>
+
+<h3>PlannInTime 适合谁？</h3>
+<p>PlannInTime 适合想要清晰专业进度表、而不想在 Excel 上浪费数小时的施工经理、承包商、工程师和项目业主。无论您在哪里施工，请在上方表单中描述您的项目、工人数量和截止日期，我们将向您展示用 PlannInTime 组织它的最佳方式。</p>
+
+<h3>常见问题</h3>
+<p><strong>PlannInTime 免费吗？</strong><br>是的，您的第一个进度表是免费的。您可以无需 Excel 创建专业的甘特图。</p>
+<p><strong>可以在手机上使用吗？</strong><br>可以，PlannInTime 可以在手机、平板和电脑上使用。</p>
+<p><strong>你们多快回复？</strong><br>24 小时内，通过邮箱 contact@plannintime.com 回复。</p>
 </div>
 </main>
 <footer>
@@ -84,5 +110,39 @@ footer a{color:#2563eb;text-decoration:none;font-weight:600;margin:0 8px}
 <a href="https://www.youtube.com/@legestionnaireprofessionne9699" target="_blank" rel="noopener" style="color:#FF0000">▶️ YouTube</a> |
 <a href="mailto:contact@plannintime.com" style="color:#0f172a">📧 Contact</a>
 </footer>
+
+<script>
+const form = document.getElementById('contactForm');
+const btn = document.getElementById('sendBtn');
+const msg = document.getElementById('formMsg');
+form.addEventListener('submit', async function(e) {
+  e.preventDefault();
+  btn.textContent = '发送中...';
+  btn.disabled = true;
+  const data = new FormData(form);
+  try {
+    const res = await fetch('https://formspree.io/f/xeagzkyy', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+    if (res.ok) {
+      form.reset();
+      msg.style.display = 'block';
+      btn.textContent = '发送消息 →';
+      btn.disabled = false;
+    } else {
+      alert('出错，请重试或写信至 contact@plannintime.com');
+      btn.textContent = '发送消息 →';
+      btn.disabled = false;
+    }
+  } catch(err) {
+    alert('连接错误');
+    btn.textContent = '发送消息 →';
+    btn.disabled = false;
+  }
+});
+</script>
+
 </body>
 </html>
